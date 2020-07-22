@@ -1,0 +1,31 @@
+@import "../variables/variables.scss";
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.main-nav {
+  width: 320px;
+  background: $base-blue-color;
+  text-align: center;
+}
+.site-list__item {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  list-style: none;
+}
+.site-list__link {
+  color: $base-white-color;
+  text-decoration: none;
+}
+

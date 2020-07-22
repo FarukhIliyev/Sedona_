@@ -1,19 +1,23 @@
 @import "../variables/variables.scss";
-.page-footer__hashtag {
+.promo {
+  width: 320px;
+  text-align: center;
+}
+.promo__title {
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
-  color: $base-black-color;
   text-transform: uppercase;
+  color: $base-black-color;
 }
-.copyright__text {
+.promo__description {
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  color: $light-black-color;
   text-transform: uppercase;
+  color: $light-black-color;
 }
