@@ -1,4 +1,6 @@
 @import "../variables/variables.scss";
+@import "../global/fonts.scss";
+@import "../global/global.scss";
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -15,7 +17,7 @@
   text-align: center;
 }
 .site-list__item {
-  font-family: PT Sans;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -28,4 +30,3 @@
   color: $base-white-color;
   text-decoration: none;
 }
-

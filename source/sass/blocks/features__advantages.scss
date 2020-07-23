@@ -1,4 +1,6 @@
 @import "../variables/variables.scss";
+@import "../global/fonts.scss";
+@import "../global/global.scss";
 .features__advantages {
   width: 320px;
 }
@@ -15,7 +17,7 @@
   text-transform: uppercase;
 }
 .advantages__description {
-  font-family: PT Sans;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

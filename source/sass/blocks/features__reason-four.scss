@@ -1,13 +1,19 @@
 @import "../variables/variables.scss";
+@import "../global/fonts.scss";
+@import "../global/global.scss";
 .features__reason-four {
   width: 320px;
   text-align: center;
 }
+.reason-four__list {
+  background-color: $base-gray-color;
+}
 .reason-four__item {
+  /*background-color: $base-gray-color;*/
   list-style: none;
 }
 .reason-four__title {
-  font-family: PT Sans;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -16,7 +22,7 @@
   text-transform: uppercase;
 }
 .reason-four__number {
-  font-family: PT Sans;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -25,7 +31,7 @@
   text-transform: uppercase;
 }
 .reason-four__description {
-  font-family: PT Sans;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
