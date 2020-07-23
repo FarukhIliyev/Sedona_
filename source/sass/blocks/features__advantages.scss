@@ -1,19 +1,25 @@
 @import "../variables/variables.scss";
-.page-footer__hashtag {
+.features__advantages {
+  width: 320px;
+}
+.advantages__item {
+  list-style: none;
+}
+.advantages__title {
   font-family: PT Sans;
   font-style: normal;
   font-weight: bold;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   color: $base-black-color;
   text-transform: uppercase;
 }
-.copyright__text {
+.advantages__description {
   font-family: PT Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 21px;
   color: $light-black-color;
   text-transform: uppercase;
 }

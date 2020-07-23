@@ -1,0 +1,35 @@
+@import "../variables/variables.scss";
+.features__reason-four {
+  width: 320px;
+  text-align: center;
+}
+.reason-four__item {
+  list-style: none;
+}
+.reason-four__title {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $base-black-color;
+  text-transform: uppercase;
+}
+.reason-four__number {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: $light-black-color;
+  text-transform: uppercase;
+}
+.reason-four__description {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: $light-black-color;
+  text-transform: uppercase;
+}
