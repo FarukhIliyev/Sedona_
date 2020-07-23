@@ -1,35 +1,25 @@
-@import "../variables/variables.scss";
-.features__reason-four {
-  width: 320px;
-  text-align: center;
+.main-reason {
+  text-transform: uppercase;
+  color: $base-white-color;
 }
-.reason-four__item {
-  list-style: none;
-}
-.reason-four__title {
+.main-reason__title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: $base-black-color;
-  text-transform: uppercase;
 }
-.reason-four__number {
+.main-reason__number {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: $light-black-color;
-  text-transform: uppercase;
 }
-.reason-four__description {
+.main-reason__description {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: $light-black-color;
-  text-transform: uppercase;
 }
