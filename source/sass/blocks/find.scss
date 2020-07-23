@@ -12,7 +12,7 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  color: $base-black-color;
+  color: $base-black;
   text-transform: uppercase;
 }
 .find__text {
@@ -21,7 +21,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: $light-black-color;
+  color: $light-black;
   text-transform: uppercase;
 }
 /*--пока сделал кнопку так, пока не могу понять алгоритм вложенности кнопки .button.scss--*/
@@ -39,8 +39,8 @@
   padding-left: 48px;
   padding-right: 47px;
   padding-bottom: 22px;
-  background-color: $base-blue-color;
-  color: $base-white-color;
+  background-color: $base-blue;
+  color: $base-white;
   text-decoration: none;
   text-transform: uppercase;
 }

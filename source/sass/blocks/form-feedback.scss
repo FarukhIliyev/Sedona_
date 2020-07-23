@@ -14,7 +14,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: $base-black-color;
+  color: $base-black;
   text-transform: uppercase;
 }
 .introduce-yourself__item,
@@ -30,7 +30,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
-  color: $light-black-color;
+  color: $light-black;
   text-transform: uppercase;
 }
 .introduce-yourself__input,
@@ -40,7 +40,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: $base-black-color;
+  color: $base-black;
 }
 .impression__label,
 .special-places__label {
@@ -49,7 +49,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: $base-black-color;
+  color: $base-black;
 }
 .describe-emotions__text {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -57,7 +57,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: $light-black-color;
+  color: $light-black;
 }
 .form-feedback__button {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -69,8 +69,8 @@
   padding-left: 48px;
   padding-right: 47px;
   padding-bottom: 22px;
-  background-color: $base-blue-color;
-  color: $base-white-color;
+  background-color: $base-blue;
+  color: $base-white;
   text-decoration: none;
   text-transform: uppercase;
   border: none;

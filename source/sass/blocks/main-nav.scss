@@ -13,7 +13,7 @@
 }
 .main-nav {
   width: 320px;
-  background: $base-blue-color;
+  background: $base-blue;
   text-align: center;
 }
 .site-list__item {
@@ -27,6 +27,6 @@
   list-style: none;
 }
 .site-list__link {
-  color: $base-white-color;
+  color: $base-white;
   text-decoration: none;
 }

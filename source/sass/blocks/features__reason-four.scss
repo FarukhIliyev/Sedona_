@@ -6,7 +6,7 @@
   text-align: center;
 }
 .reason-four__list {
-  background-color: $base-gray-color;
+  background-color: $base-gray;
 }
 .reason-four__item {
   /*background-color: $base-gray-color;*/
@@ -18,7 +18,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: $base-black-color;
+  color: $base-black;
   text-transform: uppercase;
 }
 .reason-four__number {
@@ -27,7 +27,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: $light-black-color;
+  color: $light-black;
   text-transform: uppercase;
 }
 .reason-four__description {
@@ -36,6 +36,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: $light-black-color;
+  color: $light-black;
   text-transform: uppercase;
 }
