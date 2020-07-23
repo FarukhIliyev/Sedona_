@@ -1,9 +1,15 @@
 @import "../variables/variables.scss";
+@import "../global/fonts.scss";
+@import "../global/global.scss";
 .features__reason-four {
   width: 320px;
   text-align: center;
 }
+.reason-four__list {
+  background-color: $base-gray-color;
+}
 .reason-four__item {
+  /*background-color: $base-gray-color;*/
   list-style: none;
 }
 .reason-four__title {
