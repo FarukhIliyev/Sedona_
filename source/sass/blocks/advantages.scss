@@ -1,31 +1,24 @@
 @import "../variables/variables.scss";
 @import "../global/fonts.scss";
 @import "../global/global.scss";
-.catalog__item {
+.advantages__item {
   list-style: none;
 }
-.catalog__title {
+.advantages__title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
   color: $base-black;
   text-transform: uppercase;
 }
-.catalog__text {
+.advantages__description {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
   color: $light-black;
-}
-.catalog__number {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  color: $base-black;
+  text-transform: uppercase;
 }

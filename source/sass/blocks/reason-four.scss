@@ -1,31 +1,37 @@
 @import "../variables/variables.scss";
 @import "../global/fonts.scss";
 @import "../global/global.scss";
-.catalog__item {
+.reason-four__list {
+  background-color: $base-gray;
+}
+.reason-four__item {
+  /*background-color: $base-gray-color;*/
   list-style: none;
 }
-.catalog__title {
+.reason-four__title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 26px;
   color: $base-black;
   text-transform: uppercase;
 }
-.catalog__text {
+.reason-four__number {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 21px;
   color: $light-black;
+  text-transform: uppercase;
 }
-.catalog__number {
+.reason-four__description {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 14px;
-  line-height: 24px;
-  color: $base-black;
+  line-height: 21px;
+  color: $light-black;
+  text-transform: uppercase;
 }
