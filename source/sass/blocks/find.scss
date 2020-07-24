@@ -1,11 +1,13 @@
 @import "../variables/variables.scss";
 @import "../global/fonts.scss";
 @import "global/global.scss";
+
 .find {
   width: 320px;
   text-align: center;
   padding-bottom: 49px;
 }
+
 .find__title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -15,6 +17,7 @@
   color: $base-black;
   text-transform: uppercase;
 }
+
 .find__text {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;

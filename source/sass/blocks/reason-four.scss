@@ -1,13 +1,16 @@
 @import "../variables/variables.scss";
 @import "../global/fonts.scss";
 @import "../global/global.scss";
+
 .reason-four__list {
   background-color: $base-gray;
 }
+
 .reason-four__item {
   /*background-color: $base-gray-color;*/
   list-style: none;
 }
+
 .reason-four__title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -17,6 +20,7 @@
   color: $base-black;
   text-transform: uppercase;
 }
+
 .reason-four__number {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -26,6 +30,7 @@
   color: $light-black;
   text-transform: uppercase;
 }
+
 .reason-four__description {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;

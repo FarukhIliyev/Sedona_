@@ -1,9 +1,11 @@
 @import "../variables/variables.scss";
 @import "../global/fonts.scss";
 @import "../global/global.scss";
+
 .advantages__item {
   list-style: none;
 }
+
 .advantages__title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -13,6 +15,7 @@
   color: $base-black;
   text-transform: uppercase;
 }
+
 .advantages__description {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
