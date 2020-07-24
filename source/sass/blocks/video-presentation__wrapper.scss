@@ -1,0 +1,28 @@
+@import "../variables/variables.scss";
+@import "../global/fonts.scss";
+@import "../global/global.scss";
+
+.video-presentation__wrapper {
+  width: 320px;
+  text-align: center;
+}
+
+.video-presentation__title {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $base-black;
+  text-transform: uppercase;
+}
+
+.video-presentation__text {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $light-black;
+  text-transform: uppercase;
+}

@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Форма | Сайт туристического городка в штате Аризона "Sedona"</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
-        <a class="page-header__logo" href="#">
-          <img class="page-header__logo-image" src="#" width="102" height="83" alt="Городок Седона" aria-label="Переход на Главную страницу">
-        </a>
         <button class="main-nav__toggle" type="button" aria-label="Закрыть">X</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -22,14 +20,17 @@
             <a class="site-list__link">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
+        <a class="page-header__logo" href="#">
+          <img class="page-header__logo-image" src="#" width="102" height="83" alt="Городок Седона" aria-label="Переход на Главную страницу">
+        </a>
       </nav>
     </header>
     <main class="page-main">
       <section class="intro">
-        <img class="intro__image" src="https://via.placeholder.com/150x150" width="320" height="263" alt="">
+        <img class="intro__image" src="img/bg-back-mobile@1x.jpg" width="320" height="263" alt="">
         <h1 class="intro__title">Оставьте свой отзыв</h1>
         <p class="intro__text">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них,а также о посещенных вами достопримечательностях
@@ -107,10 +108,10 @@
             </ul>
           </fieldset>
           <fieldset class="form-feedback__group describe-emotions">
-            <legend class="form-feedback__group__title">Опишите свои эмоции:</legend>
+            <legend class="form-feedback__title">Опишите свои эмоции:</legend>
             <textarea class="describe-emotions__text">Опишите подробно все свои восторги</textarea>
           </fieldset>
-          <button class="form-feedback__button" type="submit">Отправить отзыв</button>
+          <button class="form-feedback__button button" type="submit">Отправить отзыв</button>
         </form>
       </section>
     </main>
@@ -119,7 +120,7 @@
         #visitsedona
       </p>
       <section class="page-footer__social social">
-        <h2 class="vissualy-hidden">Седона в соцсетях</h2>
+        <h2 class="visually-hidden">Седона в соцсетях</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://twitter.com/" aria-label="Перейти на седону в твиттер"></a>

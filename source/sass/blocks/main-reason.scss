@@ -1,0 +1,35 @@
+@import "../variables/variables.scss";
+@import "../global/fonts.scss";
+@import "../global/global.scss";
+
+.main-reason {
+  text-transform: uppercase;
+  color: $base-white;
+}
+
+.main-reason__title {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: $base-white;
+}
+
+.main-reason__number {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: $base-white;
+}
+
+.main-reason__description {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: $base-white;
+}
