@@ -1,9 +1,13 @@
 html {
   box-sizing: border-box;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -14,35 +18,41 @@ html {
   padding: 0;
   border: 0;
 }
+
 .reset-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 body {
   position: relative;
   min-width: 1460px;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', 'Arial', sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   line-height: 1.2;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   display: block;
   max-width: 100%;
 }
+
 .feedback a {
-  font-size:22px;
-  line-height:30px;
+  font-size: 22px;
+  line-height: 30px;
   color: var(--basic-black);
 }
+
 .feedback p {
-  margin-bottom:inherit;
-  font-size:14px;
-  line-height:20px;
+  margin-bottom: inherit;
+  font-size: 14px;
+  line-height: 20px;
 }

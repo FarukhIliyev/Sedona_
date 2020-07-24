@@ -1,11 +1,13 @@
 @import "../variables/variables.scss";
 @import "../global/fonts.scss";
 @import "../global/global.scss";
+
 .main-nav {
   width: 320px;
   background: $base-blue;
   text-align: center;
 }
+
 .site-list__item {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -16,6 +18,7 @@
   text-transform: uppercase;
   list-style: none;
 }
+
 .site-list__link {
   color: $base-white;
   text-decoration: none;

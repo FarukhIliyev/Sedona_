@@ -1,10 +1,12 @@
 @import "../variables/variables.scss";
 @import "../global/fonts.scss";
 @import "../global/global.scss";
+
 .promo {
   width: 320px;
   text-align: center;
 }
+
 .promo__title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -14,6 +16,7 @@
   text-transform: uppercase;
   color: $base-black;
 }
+
 .promo__description {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;

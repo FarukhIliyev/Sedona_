@@ -1,13 +1,16 @@
 @import "../variables/variables.scss";
 @import "../global/fonts.scss";
 @import "../global/global.scss";
+
 .form-feedback {
   width: 320px;
   text-align: center;
 }
+
 .form-feedback__group {
   border: none;
 }
+
 .form-feedback__title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -17,12 +20,14 @@
   color: $base-black;
   text-transform: uppercase;
 }
+
 .introduce-yourself__item,
 .сontact-information__item,
 .impression__item,
 .special-places__item {
   list-style: none;
 }
+
 .introduce-yourself__label,
 .сontact-information__label {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -33,6 +38,7 @@
   color: $light-black;
   text-transform: uppercase;
 }
+
 .introduce-yourself__input,
 .сontact-information__input {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -42,6 +48,7 @@
   line-height: 26px;
   color: $base-black;
 }
+
 .impression__label,
 .special-places__label {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -51,6 +58,7 @@
   line-height: 26px;
   color: $base-black;
 }
+
 .describe-emotions__text {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -59,6 +67,7 @@
   line-height: 26px;
   color: $light-black;
 }
+
 .form-feedback__button {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;

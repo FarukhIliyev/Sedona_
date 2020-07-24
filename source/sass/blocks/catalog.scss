@@ -1,9 +1,11 @@
 @import "../variables/variables.scss";
 @import "../global/fonts.scss";
 @import "../global/global.scss";
+
 .catalog__item {
   list-style: none;
 }
+
 .catalog__title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -13,6 +15,7 @@
   color: $base-black;
   text-transform: uppercase;
 }
+
 .catalog__text {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
@@ -21,6 +24,7 @@
   line-height: 24px;
   color: $light-black;
 }
+
 .catalog__number {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
