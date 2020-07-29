@@ -1,3 +1,9 @@
+@import "../variables/variables.scss";
+
 .page-body {
-  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  min-width: $mobile-width;
+  min-height: 100%;
 }
+

@@ -1,3 +1,4 @@
+@import "blocks/page-header__logo";
 @import "blocks/advantages.scss";
 @import "blocks/catalog.scss";
 @import "blocks/copyright.scss";
@@ -16,6 +17,10 @@
 @import "blocks/features__advantages.scss";
 @import "blocks/features__reason-four.scss";
 @import "blocks/page-footer__social.scss";
+@import "blocks/page-body.scss";
+@import "blocks/container.scss";
+@import "global/page-header";
+@import "global/page-main";
 @import "global/page-footer.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
