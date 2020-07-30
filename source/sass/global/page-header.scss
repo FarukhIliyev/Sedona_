@@ -1,4 +1,38 @@
+@import "../variables/variables.scss";
+
 .page-header {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
 }
+
+.page-header__logo {
+  height: 84px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    height: 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    height: 97px;
+  }
+}
+/*
+.page-header__logo {
+  height: 84px;
+
+  @media (min-width: $tablet-width) {
+    height: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 97px;
+  }
+}
+*/
