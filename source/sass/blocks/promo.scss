@@ -1,6 +1,27 @@
+@import "../variables/variables.scss";
+
 .promo {
   width: 320px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    width: 768px;
+    height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+  .promo__image {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    width: 1200px;
+    height: 518px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
 }
 
 .promo__title {
@@ -21,4 +42,24 @@
   line-height: 26px;
   text-transform: uppercase;
   color: $light-black;
+}
+
+.promo__info {
+  width: 320px;
+  text-align: center;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__info {
+    width: 768px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__info {
+    width: 1200px;
+  }
 }

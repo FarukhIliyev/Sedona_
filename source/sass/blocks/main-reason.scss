@@ -1,6 +1,24 @@
+@import "../variables/variables.scss";
+
 .main-reason {
   text-transform: uppercase;
   color: $base-white;
+  outline: 5px solid rgba(0, 255, 0, 0.8);
+  outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-reason {
+    width: 256px;
+    height: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-reason {
+    width: 400px;
+    height: 256px;
+  }
 }
 
 .main-reason__title {

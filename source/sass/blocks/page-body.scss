@@ -1,7 +1,7 @@
 @import "../variables/variables.scss";
 
 .page-body {
-  display: flex;
+  display: grid;
   min-width: $mobile-width;
   min-height: 100%;
   outline: 5px solid rgba(255, 0, 0, 0.8);

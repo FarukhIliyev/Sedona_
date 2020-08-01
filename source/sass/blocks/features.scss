@@ -1,3 +1,5 @@
+@import "../variables/variables.scss";
+
 .features {
   width: 320px;
   text-align: center;
@@ -5,4 +7,19 @@
 
 .features__main-reason {
   background-color: $base-blue;
+}
+
+@media (min-width: $tablet-width) {
+  .features__main-reason__image__wrapper {
+    width: 512px;
+    background-color: $base-blue;
+    background-image: url("../img/main-city-tablet@1x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__main-reason__wrapper {
+    width: 1200px;
+    background-color: $base-blue;
+  }
 }
