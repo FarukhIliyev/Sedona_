@@ -3,6 +3,7 @@
 .promo {
   width: 320px;
   text-align: center;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -10,6 +11,7 @@
     width: 768px;
     height: 518px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -24,6 +26,7 @@
     width: 1200px;
     height: 518px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
   }
 }
 

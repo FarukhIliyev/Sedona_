@@ -3,6 +3,7 @@
 .features {
   width: 320px;
   text-align: center;
+  margin: 0;
 }
 
 .features__main-reason {
@@ -10,16 +11,21 @@
 }
 
 @media (min-width: $tablet-width) {
-  .features__main-reason__image__wrapper {
-    width: 512px;
+  .features__main-reason {
+    width: 256px;
     background-color: $base-blue;
-    background-image: url("../img/main-city-tablet@1x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) {
-  .features__main-reason__wrapper {
-    width: 1200px;
+  .features__main-reason {
+    width: 400px;
     background-color: $base-blue;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__main-reason__image {
+    width: 800px;
   }
 }
