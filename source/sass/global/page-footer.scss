@@ -2,9 +2,27 @@
 @import "../global/global.scss";
 
 .page-footer {
+  height: 233px;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
-  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 768px;
+    height: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    height: 120px;
+  }
 }
 
 .page-footer__hashtag {

@@ -1,9 +1,23 @@
 @import "../variables/variables.scss";
 
 .find {
-  width: 320px;
   text-align: center;
   padding-bottom: 49px;
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .find {
+    width: 768px;
+    height: 318px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .find {
+    width: 1200px;
+    height: 318px;
+  }
 }
 
 .find__title {
@@ -25,16 +39,16 @@
   color: $light-black;
   text-transform: uppercase;
 }
-/*--пока сделал кнопку так, пока не могу понять алгоритм вложенности кнопки .button.scss--*/
+
 .find__search {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   padding-top: 20px;
-  padding-left: 48px;
-  padding-right: 47px;
+  padding-left: 46px;
+  padding-right: 46px;
   padding-bottom: 22px;
   background-color: $base-blue;
   color: $base-white;

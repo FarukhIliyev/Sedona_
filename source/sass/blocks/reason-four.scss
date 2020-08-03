@@ -1,12 +1,46 @@
 @import "../variables/variables.scss";
 
 .reason-four__list {
-  background-color: $base-gray;
+  margin: 0;
+  padding: 0;
 }
 
 .reason-four__item {
-  /*background-color: $base-gray-color;*/
   list-style: none;
+  outline: 2px solid green;
+  outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .reason-four__item {
+    width: 256px;
+    background-color: $base-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason-four__item {
+    width: 400px;
+    background-color: $base-gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reason-four__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 768px;
+    height: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason-four__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    height: 330px;
+  }
 }
 
 .reason-four__title {

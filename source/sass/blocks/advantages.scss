@@ -1,7 +1,44 @@
 @import "../variables/variables.scss";
 
+.advantages__list {
+  margin: 0;
+  padding: 0;
+}
+
 .advantages__item {
   list-style: none;
+  outline: 2px solid green;
+  outline-offset: -5px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item {
+    width: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__item {
+    width: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 768px;
+    height: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    height: 330px;
+  }
 }
 
 .advantages__title {
