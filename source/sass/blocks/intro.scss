@@ -5,11 +5,6 @@
   text-align: center;
 }
 
-.intro__wrapper {
-  outline: 5px solid green;
-  outline-offset: -5px;
-}
-
 @media (min-width: $tablet-width) {
   .intro__image {
     display: none;
@@ -21,8 +16,6 @@
     min-width: 768px;
     height: 290px;
     background-image: url("../img/slice-tablet.jpg");
-    outline: 5px solid green;
-    outline-offset: -5px;
   }
 }
 
@@ -31,7 +24,5 @@
     min-width: 1200px;
     height: 301px;
     background-image: url("../img/slice-desktop.jpg");
-    outline: 5px solid green;
-    outline-offset: -5px;
   }
 }

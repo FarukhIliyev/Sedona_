@@ -45,11 +45,19 @@
     padding: 0 60px;
   }
 
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 480px 347px 347px;
+    width: 648px;
+    height: 1172px;
+  }
+
   .catalog__item--vast {
     display: flex;
     flex-direction: column-reverse;
-    width: 648px;
-    height: 480px;
+    grid-column-start: 1;
+    grid-column-end: -1;
     background-image: url("../img/photo-sunset-tablet@1x.jpg");
     background-repeat: no-repeat;
   }
@@ -57,28 +65,22 @@
   .catalog__item--vegetation {
     display: flex;
     flex-direction: column-reverse;
-    width: 324px;
-    height: 347px;
-    outline: 5px solid green;
-    outline-offset: -5px;
+    background-image: url("../img/photo-cactus-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .catalog__item--north {
     display: flex;
     flex-direction: column-reverse;
-    width: 324px;
-    height: 347px;
-    outline: 5px solid green;
-    outline-offset: -5px;
+    background-image: url("../img/photo-roads-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .catalog__item--bridge {
     display: flex;
     flex-direction: column-reverse;
-    width: 324px;
-    height: 347px;
-    outline: 5px solid green;
-    outline-offset: -5px;
+    background-image: url("../img/photo-bridge-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 
   .catalog__photo {
@@ -88,7 +90,6 @@
   .catalog__info-wrapper {
     display: block;
     height: 80px;
-    outline: 5px solid green;
-    outline-offset: -5px;
+    background-color: $base-gray;
   }
 }

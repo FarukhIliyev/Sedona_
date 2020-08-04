@@ -46,7 +46,7 @@
 }
 
 .promo__title {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -57,9 +57,6 @@
 }
 
 .promo__description {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
@@ -69,6 +66,4 @@
 .promo__info {
   height: 206px;
   text-align: center;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 }

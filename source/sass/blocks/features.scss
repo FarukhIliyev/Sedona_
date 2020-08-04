@@ -41,8 +41,6 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 768px;
-    outline: 5px solid green;
-    outline-offset: -5px;
   }
 }
 
@@ -51,7 +49,5 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 1200px;
-    outline: 5px solid green;
-    outline-offset: -5px;
   }
 }

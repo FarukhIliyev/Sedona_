@@ -30,11 +30,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .photo-video {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-video {
+    width: 1200px;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .photo-video__info {
     width: 768px;
     height: 248px;
-    outline: 5px solid green;
-    outline-offset: -5px;
     text-align: center;
   }
 
@@ -49,8 +59,6 @@
   .photo-video__info {
     width: 1200px;
     height: 285px;
-    outline: 5px solid green;
-    outline-offset: -5px;
   }
 
   .photo-video__title {
