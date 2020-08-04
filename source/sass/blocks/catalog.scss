@@ -4,12 +4,18 @@
   list-style: none;
 }
 
+.catalog__list {
+  margin: 0;
+  padding: 0;
+}
+
 .catalog__title {
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
   color: $base-black;
   text-transform: uppercase;
 }
@@ -20,6 +26,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
   color: $light-black;
 }
 
@@ -29,5 +36,59 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
   color: $base-black;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    padding: 0 60px;
+  }
+
+  .catalog__item--vast {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 648px;
+    height: 480px;
+    background-image: url("../img/photo-sunset-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .catalog__item--vegetation {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 324px;
+    height: 347px;
+    outline: 5px solid green;
+    outline-offset: -5px;
+  }
+
+  .catalog__item--north {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 324px;
+    height: 347px;
+    outline: 5px solid green;
+    outline-offset: -5px;
+  }
+
+  .catalog__item--bridge {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 324px;
+    height: 347px;
+    outline: 5px solid green;
+    outline-offset: -5px;
+  }
+
+  .catalog__photo {
+    display: none;
+  }
+
+  .catalog__info-wrapper {
+    display: block;
+    height: 80px;
+    outline: 5px solid green;
+    outline-offset: -5px;
+  }
 }

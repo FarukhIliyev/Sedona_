@@ -1,24 +1,37 @@
+@import "../variables/variables.scss";
+
 .intro {
   width: 320px;
   text-align: center;
 }
 
-.intro__title {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  color: $base-black;
-  text-transform: uppercase;
+.intro__wrapper {
+  outline: 5px solid green;
+  outline-offset: -5px;
 }
 
-.intro__text {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $light-black;
-  text-transform: uppercase;
+@media (min-width: $tablet-width) {
+  .intro__image {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .intro__wrapper {
+    min-width: 768px;
+    height: 290px;
+    background-image: url("../img/slice-tablet.jpg");
+    outline: 5px solid green;
+    outline-offset: -5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__wrapper {
+    min-width: 1200px;
+    height: 301px;
+    background-image: url("../img/slice-desktop.jpg");
+    outline: 5px solid green;
+    outline-offset: -5px;
+  }
 }

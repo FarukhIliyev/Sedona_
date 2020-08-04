@@ -189,65 +189,78 @@
     </header>
     <main class="page-main container">
       <section class="intro">
-        <img class="intro__image" src="img/bg-back-mobile@1x.jpg" width="320" height="263" alt="">
-        <h1 class="intro__title">Фото и Видео</h1>
-        <p class="intro__text">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-        </p>
+        <div class="intro__wrapper">
+          <img class="intro__image" src="img/slice-mobile.jpg" width="320" height="158" alt="">
+        </div>
       </section>
       <section class="photo-video">
-        <h2 class="visually-hidden">Каталог</h2>
-        <section class="photo-video__photo-catalog catalog">
-          <ul class="catalog__list">
-            <li class="catalog__item">
-              <img class="catalog__photo" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фотография закат солнца">
-              <p class="catalog__title">Неродные просторы</p>
-              <p class="catalog__text">Автор фото: Борис</p>
-              <p class="catalog__number">1350</p>
-              <button class="button catalog__like" type="button"></button>
-            </li>
-            <li class="catalog__item">
-              <img class="catalog__photo" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фотография кактус">
-              <p class="catalog__title">Местная растительность</p>
-              <p class="catalog__text">Автор фото: Сергей</p>
-              <p class="catalog__number">143</p>
-              <button class="button catalog__like" type="button"></button>
-            </li>
-            <li class="catalog__item">
-              <img class="catalog__photo" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фотография горная дорога">
-              <p class="catalog__title">Дорога на север</p>
-              <p class="catalog__text">Автор фото: Петр</p>
-              <p class="catalog__number">96</p>
-              <button class="button catalog__like" type="button"></button>
-            </li>
-            <li class="catalog__item">
-              <img class="catalog__photo" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фотография каньон">
-              <p class="catalog__title">Мост дьявола</p>
-              <p class="catalog__text">Автор фото: Антон</p>
-              <p class="catalog__number">254</p>
-              <button class="button catalog__like" type="button"></button>
-            </li>
-          </ul>
+        <section class="photo-video__info">
+          <h1 class="photo-video__title">Фото и Видео</h1>
+          <p class="photo-video__text">
+            Не можете решиться на путешествие из-за курса?<br>Фотографии помогут вам забыть о политике и экономике.
+          </p>
         </section>
-        <section class="photo-video__video video-presentation">
-          <h2 class="visually-hidden">Презентация</h2>
-          <div class="video-presentation__wrapper">
-            <h3 class="visually-hidden">Видеопрезентация: Городок Седона</h3>
-            <p class="video-presentation__title">Все еще сомневаетесь?</p>
-            <p class="video-presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-          </div>
-          <div class="video-presentation__video video-wrapper">
-            <video class="video-presentation__content">
-              <source class="video-presentation__video" src="#">
-            </video>
-            <div class="video-presentation__controls-panel">
-              <div class="video-presentation__toggle" aria-label="Перемотка видео"></div>
-            </div>
-            <button class="video-presentation__button-replay" type="button"></button>
-            <button class="video-presentation__button-subs" type="button"></button>
-            <button class="video-presentation__button-fullscreen" type="button"></button>
-          </div>
+        <div class="catalog__wrapper">
+          <section class="photo-video__photo-catalog catalog">
+            <ul class="catalog__list">
+              <li class="catalog__item catalog__item--vast">
+                <img class="catalog__photo" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фотография закат солнца">
+                <div class="catalog__info-wrapper">
+                  <p class="catalog__title">Неродные просторы</p>
+                  <p class="catalog__text">Автор фото: Борис</p>
+                  <p class="catalog__number">1350</p>
+                  <button class="button catalog__like" type="button"></button>
+                </div>
+              </li>
+              <li class="catalog__item catalog__item--vegetation">
+                <img class="catalog__photo" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фотография кактус">
+                <div class="catalog__info-wrapper">
+                  <p class="catalog__title">Местная растительность</p>
+                  <p class="catalog__text">Автор фото: Сергей</p>
+                  <p class="catalog__number">143</p>
+                  <button class="button catalog__like" type="button"></button>
+                </div>
+              </li>
+              <li class="catalog__item catalog__item--north">
+                <img class="catalog__photo" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фотография горная дорога">
+                <div class="catalog__info-wrapper">
+                  <p class="catalog__title">Дорога на север</p>
+                  <p class="catalog__text">Автор фото: Петр</p>
+                  <p class="catalog__number">96</p>
+                  <button class="button catalog__like" type="button"></button>
+                </div>
+              </li>
+              <li class="catalog__item catalog__item--bridge">
+                <img class="catalog__photo" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фотография каньон">
+                <div class="catalog__info-wrapper">
+                  <p class="catalog__title">Мост дьявола</p>
+                  <p class="catalog__text">Автор фото: Антон</p>
+                  <p class="catalog__number">254</p>
+                  <button class="button catalog__like" type="button"></button>
+                </div>
+              </li>
+            </ul>
+          </section>
         </section>
+      </div>
+      <section class="photo-video__video video-presentation">
+        <h2 class="visually-hidden">Презентация</h2>
+        <div class="video-presentation__wrapper">
+          <h3 class="visually-hidden">Видеопрезентация: Городок Седона</h3>
+          <p class="video-presentation__title">Все еще сомневаетесь?</p>
+          <p class="video-presentation__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <div class="video-presentation__video video-wrapper">
+          <video class="video-presentation__content">
+            <source class="video-presentation__video" src="#">
+          </video>
+          <div class="video-presentation__controls-panel">
+            <div class="video-presentation__toggle" aria-label="Перемотка видео"></div>
+          </div>
+          <button class="video-presentation__button-replay" type="button"></button>
+          <button class="video-presentation__button-subs" type="button"></button>
+          <button class="video-presentation__button-fullscreen" type="button"></button>
+        </div>
       </section>
     </main>
     <footer class="page-footer container">

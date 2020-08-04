@@ -3,7 +3,8 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  background-color: $base-blue;
+  height: 56px;
+  background-color: $base-white;
   outline: 5px solid rgba(0, 255, 0, 0.8);
   outline-offset: -5px;
 }
@@ -16,6 +17,9 @@
 @media (min-width: $tablet-width) {
   .page-header__logo {
     height: 85px;
+   }
+  .site-list__link {
+    color: $light-black;
   }
 }
 
@@ -24,6 +28,7 @@
     height: 97px;
   }
 }
+
 /*
 .page-header__logo {
   height: 84px;

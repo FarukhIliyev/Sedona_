@@ -4,6 +4,8 @@
   text-align: center;
   padding-bottom: 49px;
   margin: 0;
+  outline: 5px solid green;
+  outline-offset: -5px;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,6 +28,7 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin: 0;
   color: $base-black;
   text-transform: uppercase;
 }
@@ -54,4 +57,18 @@
   color: $base-white;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .find__search {
+    padding-left: 136px;
+    padding-right: 136px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .find__search {
+    padding-left: 136px;
+    padding-right: 136px;
+  }
 }
