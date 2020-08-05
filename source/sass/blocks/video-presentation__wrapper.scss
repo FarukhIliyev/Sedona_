@@ -1,11 +1,12 @@
 @import "../variables/variables.scss";
 
-.video-presentation__wrapper {
-  width: 320px;
+.video__info {
   text-align: center;
+  padding-left: 43px;
+  padding-right: 32px;
 }
 
-.video-presentation__title {
+.video__title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -15,7 +16,7 @@
   text-transform: uppercase;
 }
 
-.video-presentation__text {
+.video__text {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -23,4 +24,49 @@
   line-height: 24px;
   color: $light-black;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .video__info {
+    padding-left: 102px;
+    padding-right: 102px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__info {
+    padding-left: 177px;
+    padding-right: 177px;
+  }
+}
+
+.video__content {
+  height: 267px;
+  background-image: url("../img/slice-clip-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .video__content {
+    width: 648px;
+    height: 500px;
+    background-image: url("../img/slice-clip-tablet.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__wrapper {
+    padding: 0 199px;
+  }
+
+  .video__content {
+    width: 800px;
+    height: 500px;
+    background-image: url("../img/slice-clip-desktop.jpg");
+  }
+}
+
+.photo-video__video {
+  outline: 5px solid yellow;
+  outline-offset: -5px;
 }

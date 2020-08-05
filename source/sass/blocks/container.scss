@@ -9,15 +9,11 @@
   .container {
     width: 768px;
     padding: 0 60px;
-    outline: 5px solid green;
-    outline-offset: -5px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .container {
     width: 1200px;
-    outline: 5px solid green;
-    outline-offset: -5px;
   }
 }
