@@ -3,6 +3,14 @@
 .main-nav {
   width: 320px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .main-nav__list {
@@ -11,19 +19,37 @@
 }
 
 .site-list__item {
+  text-align: center;
+  list-style: none;
+}
+
+.site-list__link {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  list-style: none;
-}
-
-.site-list__link {
   color: $base-white;
   text-decoration: none;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: $base-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: $base-black;
+  }
 }
 
 .main-nav__wrapper {

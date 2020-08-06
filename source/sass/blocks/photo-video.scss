@@ -3,6 +3,14 @@
 .photo-video {
   width: 320px;
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .photo-video__info {
