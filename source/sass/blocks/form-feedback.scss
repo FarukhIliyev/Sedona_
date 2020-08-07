@@ -15,9 +15,15 @@
 
 .form-feedback__group {
   border: none;
+  margin: 0;
+  padding: 0;
+  /*outline: 5px solid green;
+  outline-offset: -5px;*/
 }
 
 .form-feedback__title {
+  margin: 0 auto;
+  padding-top: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -66,12 +72,21 @@
 }
 
 .describe-emotions__text {
+  width: 279px;
+  height: 160px;
+  resize: none;
+  margin-top: 22px;
+  margin-bottom: 26px;
+  padding-top: 19px;
+  padding-left: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  color: $light-black;
+  color: $base-black;
+  background-color: $light-gray;
+  border: none;
 }
 
 .form-feedback__button {
@@ -80,6 +95,8 @@
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  margin-top: 25px;
+  margin-bottom: 50px;
   padding-top: 20px;
   padding-left: 48px;
   padding-right: 47px;
@@ -89,4 +106,92 @@
   text-decoration: none;
   text-transform: uppercase;
   border: none;
+}
+/*
+.introduce-yourself {
+  display: flex;
+}
+*/
+.introduce-yourself__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 26px;
+}
+
+.introduce-yourself__item {
+  display: flex;
+  padding: 20px;
+}
+
+.introduce-yourself__label {
+  margin-right: 13px;
+}
+
+.introduce-yourself__input {
+  width: 100%;
+  padding-left: 23px;
+  background-color: $light-gray;
+  border: none;
+}
+
+.сontact-information__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 26px;
+}
+
+.сontact-information__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.сontact-information__input {
+  width: 100%;
+  padding-left: 20px;
+  background-color: $light-gray;
+  border: none;
+}
+
+.сontact-information__label {
+  margin-left: 22px;
+  margin-bottom: 17px;
+}
+
+.impression__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 26px;
+}
+
+.impression__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+.impression__input {
+  width: 56px;
+  margin: 0;
+  background-color: $light-gray;
+}
+
+.special-places__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 26px;
+}
+
+.special-places__item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+}
+
+.special-places__input {
+  width: 56px;
+  margin: 0;
+  background-color: $light-gray;
 }

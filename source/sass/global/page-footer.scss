@@ -1,11 +1,8 @@
 @import "../variables/variables.scss";
 @import "../global/global.scss";
 
-.page-footer {
-  height: 233px;
-}
-
 .page-footer__hashtag {
+  margin: 0;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;

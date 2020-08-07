@@ -1,9 +1,9 @@
 @import "../variables/variables.scss";
 
 .container {
-  display: block;
   width: 320px;
   margin: 0 auto;
+  overflow: hidden;
   box-shadow: 0 0 10px 10px $base-gray;
 
   @media (min-width: $tablet-width) {
