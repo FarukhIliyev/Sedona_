@@ -1,15 +1,17 @@
 @import "../variables/variables.scss";
 
 .main-nav {
-  width: 320px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
+  @media (min-width: $mobile-width) {
+    width: 320px;
+    text-align: center;
+    background-color: $base-blue;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 1200px;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    width: 768px;
+    background-color: $base-white;
   }
 }
 
@@ -19,30 +21,32 @@
 }
 
 .site-list__item {
-  text-align: center;
-  list-style: none;
+  @media (min-width: $mobile-width) {
+    text-align: center;
+    list-style: none;
+    border-top: 1px solid $base-light-blue;
+    border-bottom: 1px solid $base-dark-blue;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .site-list__link {
+  display: block;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   line-height: 40px;
   color: $base-white;
   text-decoration: none;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 26px;
-    color: $base-black;
-  }
-
-  @media (min-width: $desktop-width) {
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;

@@ -1,36 +1,37 @@
 @import "../variables/variables.scss";
 
 .page-header {
-  display: flex;
-  flex-direction: column;
-  height: 56px;
-  background-color: $base-white;
+  @media (min-width: $mobile-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 279px;
+    background-color: $base-white;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-start;
+    height: 56px;
+  }
 }
 
 .page-header__logo {
-  height: 84px;
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .page-header {
-    display: flex;
-    flex-direction: row;
-    position: relative;
+  @media (min-width: $mobile-width) {
+    position: absolute;
+    top: 228px;
+    left: 35%;
+    height: 85px;
+    z-index: 20;
   }
 
-  .page-header__logo {
+  @media (min-width: $tablet-width) {
     position: absolute;
     height: 85px;
   }
 
-  .site-list__link {
-    color: $light-black;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header__logo {
+  @media (min-width: $desktop-width) {
+    position: absolute;
     height: 97px;
   }
 }
