@@ -172,7 +172,9 @@
 
   .introduce-yourself__item {
     display: flex;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
   }
 
   .introduce-yourself__label {
@@ -181,7 +183,9 @@
 
   .introduce-yourself__input {
     width: 100%;
+    padding-top: 24px;
     padding-left: 23px;
+    padding-bottom: 21px;
     background-color: $light-gray;
     border: none;
   }
@@ -207,7 +211,9 @@
 
   .introduce-yourself__item {
     display: flex;
-    padding: 20px;
+    align-items: center;
+    margin-left: 58px;
+    padding: 0;
   }
 
   .introduce-yourself__label {
@@ -216,7 +222,6 @@
 
   .introduce-yourself__input {
     width: 100%;
-    padding-left: 23px;
     background-color: $light-gray;
     border: none;
   }
@@ -227,12 +232,6 @@
     margin: 0;
     padding: 0;
     padding-bottom: 26px;
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-    }
   }
 
   .сontact-information__item {
@@ -243,7 +242,9 @@
 
   .сontact-information__input {
     width: 100%;
-    padding-left: 20px;
+    padding-top: 24px;
+    padding-left: 23px;
+    padding-bottom: 21px;
     background-color: $light-gray;
     border: none;
   }
@@ -257,33 +258,51 @@
 @media (min-width: $tablet-width) {
   .сontact-information__list {
     width: 648px;
-    height: 335px;
     margin: 0;
     padding: 0;
     padding-bottom: 26px;
 
     @media (min-width: $desktop-width) {
       width: 960px;
+      display: flex;
+      align-items: center;
     }
   }
 
   .сontact-information__item {
     display: flex;
-    flex-wrap: wrap;
     margin-top: 32px;
     padding: 0;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      align-items: center;
+      margin-top: 47px;
+      width: 479px;
+      outline: 5px solid rgba(0, 255, 0, 0.8);
+      outline-offset: -5px;
+    }
   }
 
   .сontact-information__input {
     width: 100%;
     padding: 24px;
+    margin-left: 16px;
     background-color: $light-gray;
     border: none;
+
+    @media (min-width: $desktop-width) {
+      width: 315px;
+    }
   }
 
   .сontact-information__label {
     margin-left: 22px;
     margin-bottom: 17px;
+
+    @media (min-width: $desktop-width) {
+      margin: 0;
+    }
   }
 }
 
