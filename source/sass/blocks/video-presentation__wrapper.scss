@@ -41,6 +41,7 @@
 }
 
 .video__content {
+  width: 320px;
   height: 267px;
   background-image: url("../img/slice-clip-mobile.jpg");
   background-repeat: no-repeat;
@@ -66,7 +67,26 @@
   }
 }
 
-.photo-video__video {
-  outline: 5px solid yellow;
-  outline-offset: -5px;
+.video__presentation {
+  position: relative;
+}
+
+.video__controls-panel {
+  position: absolute;
+  left: 20px;
+  bottom: 70px;
+  width: 280px;
+  height: 45px;
+  background-color: $base-black;
+  opacity: 0.3;
+}
+
+.video__button {
+  position: absolute;
+  left: 20px;
+  bottom: 4px;
+  width: 280px;
+  height: 66px;
+  margin: 0 auto;
+  background-color: $base-gray;
 }
