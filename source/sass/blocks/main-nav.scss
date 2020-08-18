@@ -2,7 +2,6 @@
 
 .main-nav {
   @media (min-width: $mobile-width) {
-    position: relative;
     width: 320px;
     text-align: center;
     background-color: $base-blue;
@@ -73,13 +72,14 @@
     display: flex;
     justify-content: space-between;
     width: 692px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
     width: 1040px;
+    margin: auto;
   }
 }
 
