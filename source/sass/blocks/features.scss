@@ -78,8 +78,6 @@
 
 @media (min-width: $desktop-width) {
   .features__main-reason__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     width: 1200px;
   }
 }
