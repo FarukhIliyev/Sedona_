@@ -1,5 +1,6 @@
-@import "../variables/variables.scss";
-@import "../global/global.scss";
+.page-footer {
+  display: flex;
+}
 
 .page-footer__hashtag {
   margin: 0;
@@ -12,6 +13,25 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 768px;
+    height: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    height: 120px;
+  }
+}
+
+/*
 @media (min-width: $tablet-width) {
   .page-footer {
     display: grid;
@@ -29,3 +49,4 @@
     height: 120px;
   }
 }
+*/
