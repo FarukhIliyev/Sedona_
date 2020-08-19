@@ -1,18 +1,46 @@
-@import "../variables/variables.scss";
-@import "../global/fonts.scss";
-@import "../global/global.scss";
-
 .reason-four__list {
-  background-color: $base-gray;
+  margin: 0;
+  padding: 0;
 }
 
 .reason-four__item {
-  /*background-color: $base-gray-color;*/
   list-style: none;
 }
 
+@media (min-width: $tablet-width) {
+  .reason-four__item {
+    width: 256px;
+    background-color: $base-gray;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason-four__item {
+    width: 400px;
+    background-color: $base-gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reason-four__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 768px;
+    height: 330px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reason-four__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    height: 330px;
+  }
+}
+
 .reason-four__title {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -22,7 +50,7 @@
 }
 
 .reason-four__number {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -32,7 +60,7 @@
 }
 
 .reason-four__description {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

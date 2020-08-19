@@ -1,7 +1,5 @@
-@import "../variables/variables.scss";
-@import "../global/global.scss";
-
 .page-footer__hashtag {
+  margin: 0;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -11,12 +9,52 @@
   text-transform: uppercase;
 }
 
-.copyright__text {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 26px;
-  color: $light-black;
-  text-transform: uppercase;
+@media (min-width: $mobile-width) {
+  .page-footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 84px;
+    padding-right: 84px;
+  }
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 768px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+/*
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 768px;
+    height: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1200px;
+    height: 120px;
+  }
+}
+*/

@@ -1,6 +1,7 @@
-.features__reason-four {
+.container {
+  position: relative;
   width: 320px;
-  text-align: center;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 768px;

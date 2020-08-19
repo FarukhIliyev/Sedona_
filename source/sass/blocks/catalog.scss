@@ -1,35 +1,182 @@
-@import "../variables/variables.scss";
-@import "../global/fonts.scss";
-@import "../global/global.scss";
+.catalog__list {
+  margin: 0;
+  padding: 0;
+}
 
 .catalog__item {
+  width: 320px;
+  height: 416px;
   list-style: none;
+
+  @media (min-width: $mobile-width) {
+    padding: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .catalog__title {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-  color: $base-black;
+  margin: 0;
   text-transform: uppercase;
 }
 
 .catalog__text {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: $light-black;
+  margin: 0;
 }
 
 .catalog__number {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-  color: $base-black;
+  margin: 0;
+}
+
+.catalog__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    grid-template-rows: 480px 347px 347px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog__list {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 267px;
+  }
+}
+
+.catalog__photo {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.catalog__item--vast {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    width: 648px;
+    height: 480px;
+    background-image: url("../img/photo-sunset-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 400px;
+    background-image: url("../img/photo-sunset-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.catalog__item--vegetation {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 324px;
+    height: 347px;
+    background-image: url("../img/photo-cactus-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 400px;
+    height: 267px;
+    background-image: url("../img/photo-cactus-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.catalog__item--north {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 324px;
+    height: 347px;
+    background-image: url("../img/photo-roads-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 400px;
+    height: 267px;
+    background-image: url("../img/photo-roads-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.catalog__item--bridge {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 324px;
+    height: 347px;
+    background-image: url("../img/photo-bridge-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 400px;
+    height: 267px;
+    background-image: url("../img/photo-bridge-desktop@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.catalog__info-wrapper {
+  @media (min-width: $tablet-width) {
+    display: block;
+    height: 80px;
+    background-color: $base-gray;
+    cursor: pointer;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    height: 80px;
+    background-color: $base-black;
+    color: $base-white;
+    opacity: 0.3;
+    cursor: pointer;
+  }
 }

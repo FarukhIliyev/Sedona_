@@ -1,28 +1,77 @@
-@import "../variables/variables.scss";
-@import "../global/fonts.scss";
-@import "../global/global.scss";
-
 .promo {
+  position: relative;
   width: 320px;
   text-align: center;
+  margin: 0;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__image {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    width: 768px;
+    height: 518px;
+    background-image: url("../img/slice-back-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrapper {
+    width: 1200px;
+    height: 518px;
+    background-image: url("../img/slice-back-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo__info {
+    width: 768px;
+    height: 206px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__info {
+    width: 1200px;
+    height: 206px;
+  }
 }
 
 .promo__title {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
   text-transform: uppercase;
   color: $base-black;
 }
 
 .promo__description {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
   color: $light-black;
+}
+
+.promo__info {
+  height: 206px;
+  text-align: center;
 }
