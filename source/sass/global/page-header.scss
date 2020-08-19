@@ -23,10 +23,7 @@
 
 .page-header__logo {
   @media (min-width: $mobile-width) {
-<<<<<<< HEAD
-=======
     position: absolute;
->>>>>>> 536b99c9037a82c7d436ff01c0c2e7ff2a6156ca
     top: 208px;
     left: 110px;
     width: 102px;
@@ -37,12 +34,9 @@
   }
 
   @media (min-width: $tablet-width) {
-<<<<<<< HEAD
-=======
     position: absolute;
     top: 0;
     left: 340px;
->>>>>>> 536b99c9037a82c7d436ff01c0c2e7ff2a6156ca
     width: 102px;
     height: 85px;
     background-image: url("../img/logo-sedona-tablet.svg");
@@ -51,12 +45,9 @@
   }
 
   @media (min-width: $desktop-width) {
-<<<<<<< HEAD
-=======
     position: absolute;
     top: 0;
     left: 508px;
->>>>>>> 536b99c9037a82c7d436ff01c0c2e7ff2a6156ca
     width: 186px;
     height: 97px;
     background-image: url("../img/logo-sedona-desktop.svg");
