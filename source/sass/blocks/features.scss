@@ -53,6 +53,20 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .features__main-reason__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__main-reason__wrapper {
+    width: 1200px;
+  }
+}
+
 .features__main-reason__image-wrapper--bridge {
   @media (min-width: $tablet-width) {
     width: 512px;
@@ -65,19 +79,5 @@
     width: 800px;
     background-image: url("../img/main-bridge-desktop@1x.jpg");
     background-repeat: no-repeat;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .features__main-reason__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .features__main-reason__wrapper {
-    width: 1200px;
   }
 }
