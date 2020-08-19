@@ -1,3 +1,7 @@
+.reason-four {
+  background-color: $base-gray;
+}
+
 .reason-four__list {
   margin: 0;
   padding: 0;
@@ -45,6 +49,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  margin: 0;
   color: $base-black;
   text-transform: uppercase;
 }

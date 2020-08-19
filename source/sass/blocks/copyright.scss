@@ -1,9 +1,16 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .copyright__text {
-  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 26px;
+  margin-right: 13px;
   color: $light-black;
   text-transform: uppercase;
 }
