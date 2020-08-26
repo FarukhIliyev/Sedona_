@@ -1,0 +1,120 @@
+.modal-connect,
+.modal-disconnect {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-connect {
+    position: absolute;
+    top: 47%;
+    left: 29%;
+    display: none;
+    width: 640px;
+    height: 347px;
+    text-align: center;
+    padding-top: 48px;
+    box-shadow: 0 0 10px 5px $dark-gray;
+    background-color: $base-white;
+  }
+
+  .modal-connect__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 41px;
+  }
+
+  .modal-connect__text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .modal-connect__button {
+    width: 457px;
+    height: 58px;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    border: none;
+    background-color: $base-blue;
+    color: $base-white;
+  }
+
+  .modal-connect__button-wrapper {
+    width: 640px;
+    height: 140px;
+    margin-top: 46px;
+    padding-top: 44px;
+    background-color: $base-gray;
+  }
+
+  .modal-disconnect {
+    position: absolute;
+    top: 62%;
+    left: 37%;
+    display: none;
+    width: 400px;
+    height: 347px;
+    padding-top: 40px;
+    padding-left: 63px;
+    padding-right: 63px;
+    text-align: center;
+    box-shadow: 0 0 10px $dark-gray;
+    background-color: $base-white;
+  }
+
+  .modal-disconnect__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .modal-disconnect__text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .modal-disconnect__button {
+    width: 272px;
+    height: 58px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-transform: uppercase;
+    border: none;
+    background-color: $base-blue;
+    color: $base-white;
+  }
+}

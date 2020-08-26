@@ -262,6 +262,15 @@
       align-items: center;
       justify-content: space-between;
       width: 960px;
+
+      .contact-telephone {
+        flex-grow: 1;
+      }
+
+      .contact-email {
+        flex-grow: 2;
+        justify-content: flex-end;
+      }
     }
   }
 
@@ -272,13 +281,10 @@
 
     @media (min-width: $desktop-width) {
       position: relative;
-      display: inline-block;
-      vertical-align: top;
       align-items: center;
       margin-top: 47px;
-      width: 480px;
-      outline: 5px solid rgba(0, 255, 0, 0.8);
-      outline-offset: -5px;
+      /*outline: 5px solid rgba(0, 255, 0, 0.8);
+      outline-offset: -5px;*/
     }
   }
 
@@ -286,12 +292,13 @@
     width: 100%;
     padding-top: 16px;
     padding-left: 24px;
-    padding-bottom: 16px;
+    padding-bottom: 17px;
     background-color: $light-gray;
     border: none;
 
     @media (min-width: $desktop-width) {
       width: 315px;
+      margin-left: 20px;
     }
   }
 
@@ -333,7 +340,7 @@
     &::before {
       content: "";
       position: absolute;
-      left: -130px;
+      left: 360px;
       top: 0;
       width: 58px;
       height: 58px;
@@ -526,118 +533,5 @@
 .describe-emotions {
   @media (min-width: $tablet-width) {
     width: 648px;
-  }
-}
-
-.modal-connect,
-.modal-disconnect {
-  @media (min-width: $mobile-width) {
-    display: none;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .modal-connect {
-    display: none;
-    width: 640px;
-    height: 347px;
-    text-align: center;
-    padding-top: 48px;
-    box-shadow: 0 0 10px 5px $dark-gray;
-  }
-
-  .modal-connect__title {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 26px;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 41px;
-  }
-
-  .modal-connect__text {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  .modal-connect__button {
-    width: 457px;
-    height: 58px;
-    padding: 0;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    text-transform: uppercase;
-    border: none;
-    background-color: $base-blue;
-    color: $base-white;
-  }
-
-  .modal-connect__button-wrapper {
-    width: 640px;
-    height: 140px;
-    margin-top: 44px;
-    padding-top: 44px;
-    background-color: $base-gray;
-  }
-
-  .modal-disconnect {
-    display: none;
-    width: 400px;
-    height: 347px;
-    padding-top: 40px;
-    padding-left: 63px;
-    padding-right: 63px;
-    text-align: center;
-    box-shadow: 0 0 10px 5px $dark-gray;
-  }
-
-  .modal-disconnect__title {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 40px;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 30px;
-  }
-
-  .modal-disconnect__text {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 40px;
-  }
-
-  .modal-disconnect__button {
-    width: 272px;
-    height: 58px;
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    text-transform: uppercase;
-    border: none;
-    background-color: $base-blue;
-    color: $base-white;
   }
 }
