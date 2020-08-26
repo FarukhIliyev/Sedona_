@@ -32,6 +32,12 @@
     br {
       display: none;
     }
+
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
+    }
   }
 }
 

@@ -1,5 +1,5 @@
 .reason-four {
-  background-color: $base-gray;
+  background-color: $light-gray;
 }
 
 .reason-four__list {
@@ -30,7 +30,7 @@
     padding-bottom: 30px;
     width: 280px;
     margin: 0 auto;
-    border-bottom: 2px solid $dark-gray;
+    border-bottom: 1px solid $dark-gray;
   }
 
   @media (min-width: $tablet-width) {

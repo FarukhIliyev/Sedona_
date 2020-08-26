@@ -12,21 +12,27 @@
   }
 }
 
-.features__main-reason {
+.features__main-reason__wrapper {
   background-color: $base-blue;
-}
 
-@media (min-width: $tablet-width) {
-  .features__main-reason {
-    width: 256px;
-    background-color: $base-blue;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .features__main-reason {
+.features__main-reason {
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 400px;
-    background-color: $base-blue;
   }
 }
 
@@ -48,20 +54,6 @@
     width: 800px;
     background-image: url("../img/main-city-desktop@1x.jpg");
     background-repeat: no-repeat;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .features__main-reason__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .features__main-reason__wrapper {
-    width: 1200px;
   }
 }
 
