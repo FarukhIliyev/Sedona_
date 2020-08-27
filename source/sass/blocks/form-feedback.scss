@@ -24,13 +24,13 @@
 }
 
 .form-feedback__title {
-  margin: 0 auto;
-  padding-top: 26px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  margin: 0 auto;
+  padding-top: 26px;
   color: $base-black;
   text-transform: uppercase;
 }
@@ -179,9 +179,9 @@
 
   .introduce-yourself__input {
     width: 100%;
-    padding-top: 24px;
+    padding-top: 16px;
     padding-left: 23px;
-    padding-bottom: 21px;
+    padding-bottom: 16px;
     background-color: $light-gray;
     border: none;
   }
@@ -349,6 +349,23 @@
   }
 }
 
+.impression__input[type="radio"] {
+  display: none;
+}
+
+.impression__input[type="radio"]:checked + .impression__label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 37px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: $light-black;
+  }
+}
+
 @media (min-width: $mobile-width) {
   .impression__list {
     margin: 0;
@@ -362,7 +379,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 20px 20px 20px 98px;
+    padding: 25px 20px 20px 98px;
   }
 
   .impression__input {
@@ -377,10 +394,6 @@
     padding: 0;
     padding-top: 12px;
   }
-}
-
-.impression__input {
-  display: none;
 }
 
 @media (min-width: $mobile-width) {
@@ -428,19 +441,76 @@
   }
 }
 
-.special-places__input {
+.special-places__input[type="checkbox"] {
   display: none;
 }
 
-@media (min-width: $mobile-width) {
-  .special-places__list {
+.special-places__input[type="checkbox"]:checked + .special-places__label {
+  @media (min-width: $mobile-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 31px;
+      left: 37px;
+      width: 24px;
+      height: 17px;
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 31px;
+      width: 24px;
+      height: 17px;
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 31px;
+      left: 20px;
+      width: 24px;
+      height: 17px;
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.special-places__list {
+  @media (min-width: $mobile-width) {
     margin: 0;
     padding: 0;
     padding-top: 12px;
     padding-bottom: 26px;
   }
 
-  .special-places__item {
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    padding-top: 48px;
+    padding-bottom: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 960px;
+    padding: 0;
+    padding-top: 48px;
+    padding-bottom: 26px;
+  }
+}
+
+.special-places__item {
+  @media (min-width: $mobile-width) {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -448,40 +518,8 @@
     padding: 28px 20px 20px 100px;
   }
 
-  .special-places__input {
-    width: 56px;
-    margin: 0;
-    background-color: $light-gray;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .special-places__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 648px;
-    margin: 0;
-    padding: 0;
-    padding-top: 48px;
-    padding-bottom: 26px;
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      width: 960px;
-    }
-  }
-
-  .special-places__item {
-    width: 230px;
-    padding: 20px;
-    padding-top: 28px;
-  }
-
-  .special-places__input {
-    width: 56px;
-    margin: 0;
-    background-color: $light-gray;
+  @media (min-width: $tablet-width) {
+    position: relative;
   }
 }
 
@@ -490,7 +528,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 10px;
+      top: 13px;
       left: 20px;
       width: 56px;
       height: 56px;
@@ -504,7 +542,7 @@
       &::before {
         content: "";
         position: absolute;
-        top: 10px;
+        top: 13px;
         left: -55px;
         width: 56px;
         height: 56px;
@@ -519,11 +557,11 @@
       &::before {
         content: "";
         position: absolute;
-        top: 10px;
-        left: -55px;
+        top: 12px;
+        left: 4px;
         width: 56px;
         height: 56px;
-        border-radius: 10%;
+        border-radius: 0;
         background-color: $light-gray;
       }
     }
