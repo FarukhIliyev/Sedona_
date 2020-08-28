@@ -15,12 +15,11 @@
   border: none;
   margin: 0;
   padding: 0;
-  /*
+
   @media (min-width: $tablet-width) {
     outline: 5px solid rgba(0, 255, 0, 0.8);
     outline-offset: -5px;
   }
-  */
 }
 
 .form-feedback__title {
@@ -494,9 +493,11 @@
   }
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 648px;
     padding-top: 48px;
-    
     padding-bottom: 26px;
   }
 
@@ -521,6 +522,7 @@
 
   @media (min-width: $tablet-width) {
     position: relative;
+    width: 242px;
   }
 }
 
@@ -544,7 +546,6 @@
         content: "";
         position: absolute;
         top: 13px;
-        left: -55px;
         width: 56px;
         height: 56px;
         border-radius: 10%;
