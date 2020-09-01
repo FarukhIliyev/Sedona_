@@ -1,3 +1,27 @@
-.social__item {
+.social__list {
+  display: flex;
+  align-items: center;
+  width: 151px;
+  padding: 0;
   list-style: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  background-color: $base-blue;
+  cursor: pointer;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+}
+
+.social__item:nth-child(3n) {
+  margin: 0;
 }

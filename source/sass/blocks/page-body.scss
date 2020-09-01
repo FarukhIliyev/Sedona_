@@ -1,4 +1,5 @@
 .page-body {
+  position: relative;
   min-width: $mobile-width;
   min-height: 100%;
 }
@@ -8,18 +9,18 @@
     position: relative;
     width: 320px;
     margin: 0 auto;
-    box-shadow: 0 0 10px 10px $base-gray;
+    box-shadow: 0 0 10px 5px $dark-gray;
   }
 
   @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
-    box-shadow: 0 0 10px 10px $base-gray;
+    box-shadow: 0 0 10px 5px $dark-gray;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 0 10px 10px $base-gray;
+    box-shadow: 0 0 10px 5px $dark-gray;
   }
 }

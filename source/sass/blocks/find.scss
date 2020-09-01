@@ -1,20 +1,17 @@
 .find {
-  text-align: center;
-  padding-bottom: 49px;
-  margin: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .find {
-    width: 768px;
-    height: 318px;
+  @media (min-width: $mobile-width) {
+    text-align: center;
+    margin: 0;
+    padding-top: 38px;
+    padding-bottom: 49px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .find {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 1200px;
-    height: 318px;
   }
 }
 
@@ -25,6 +22,7 @@
   font-size: 21px;
   line-height: 26px;
   margin: 0;
+  margin-bottom: 33px;
   color: $base-black;
   text-transform: uppercase;
 }
@@ -35,36 +33,44 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
+  margin-bottom: 33px;
   color: $light-black;
   text-transform: uppercase;
 }
 
 .find__search {
-  font-style: normal;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  padding-top: 20px;
-  padding-left: 46px;
-  padding-right: 46px;
-  padding-bottom: 22px;
-  background-color: $base-blue;
-  color: $base-white;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
-  .find__search {
-    padding-left: 136px;
-    padding-right: 136px;
+  @media (min-width: $mobile-width) {
+    display: block;
+    font-style: normal;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    width: 280px;
+    height: 58px;
+    margin: 0 auto;
+    padding-top: 15px;
+    background-color: $base-blue;
+    color: $base-white;
+    text-decoration: none;
+    text-transform: uppercase;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .find__search {
-    padding-left: 136px;
-    padding-right: 136px;
+  @media (min-width: $tablet-width) {
+    width: 458px;
+    margin-top: 43px;
+    margin-left: 155px;
+    margin-right: 155px;
+    margin-bottom: 58px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 371px;
+    margin-right: 371px;
   }
 }

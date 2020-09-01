@@ -3,7 +3,6 @@
   width: 320px;
   text-align: center;
   margin: 0;
-  z-index: 1;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -29,27 +28,32 @@
   }
 }
 
+.promo__info {
+  @media (min-width: $mobile-width) {
+    padding-top: 35px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 206px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 206px;
+  }
+}
+
+
 @media (min-width: $desktop-width) {
   .promo__wrapper {
     width: 1200px;
     height: 518px;
     background-image: url("../img/slice-back-desktop.jpg");
     background-repeat: no-repeat;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .promo__info {
-    width: 768px;
-    height: 206px;
-    margin: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .promo__info {
-    width: 1200px;
-    height: 206px;
   }
 }
 
@@ -65,13 +69,12 @@
 }
 
 .promo__description {
-  font-size: 14px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: $light-black;
-}
-
-.promo__info {
-  height: 206px;
-  text-align: center;
+  @media (min-width: $mobile-width) {
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    margin-bottom: 33px;
+    color: $light-black;
+  }
 }
