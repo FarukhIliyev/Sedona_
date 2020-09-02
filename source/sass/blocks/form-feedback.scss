@@ -17,8 +17,8 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    outline: 5px solid rgba(0, 255, 0, 0.8);
-    outline-offset: -5px;
+    /*outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;*/
   }
 }
 
@@ -261,15 +261,6 @@
       align-items: center;
       justify-content: space-between;
       width: 960px;
-
-      .contact-telephone {
-        flex-grow: 1;
-      }
-
-      .contact-email {
-        flex-grow: 2;
-        justify-content: flex-end;
-      }
     }
   }
 
@@ -317,7 +308,7 @@
       content: "";
       position: relative;
       top: 58px;
-      left: 222px;
+      right: -222px;
       width: 58px;
       height: 58px;
       background-color: $dark-gray;
@@ -328,7 +319,7 @@
     &::before {
       content: "";
       top: 58px;
-      left: 590px;
+      right: -590px;
       width: 58px;
       height: 58px;
       background-color: $dark-gray;
@@ -339,8 +330,8 @@
     &::before {
       content: "";
       position: absolute;
-      left: 360px;
       top: 0;
+      right: 0;
       width: 58px;
       height: 58px;
       background-color: $dark-gray;
