@@ -131,6 +131,36 @@
   }
 }
 
+.form-feedback__text {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding-top: 35px;
+    padding-left: 164px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding-top: 35px;
+    padding-left: 326px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .introduce-yourself {
     grid-column: 2 / 3;
@@ -154,6 +184,10 @@
 
   .form-feedback__button {
     grid-row: 5 / 6;
+  }
+
+  .form-feedback__text {
+    grid-row: 5 / 7;
   }
 }
 
@@ -265,12 +299,12 @@
   }
 
   .сontact-information__item {
+    position: relative;
     display: flex;
     margin-top: 32px;
     padding: 0;
 
     @media (min-width: $desktop-width) {
-      position: relative;
       align-items: center;
       margin-top: 47px;
       /*outline: 5px solid rgba(0, 255, 0, 0.8);
@@ -318,6 +352,7 @@
   @media (min-width: $tablet-width) {
     &::before {
       content: "";
+      position: relative;
       top: 58px;
       right: -590px;
       width: 58px;
@@ -339,6 +374,86 @@
   }
 }
 
+.contact__phone {
+  @media (min-width: $mobile-width) {
+    &::after {
+      content: "";
+      position: relative;
+      top: -38px;
+      left: 243px;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: relative;
+      top: -38px;
+      left: 611px;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/icon-phone.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: relative;
+      top: 0;
+      left: -19px;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/icon-phone.svg");
+      z-index: 1;
+    }
+  }
+}
+
+.contact__mail {
+  @media (min-width: $mobile-width) {
+    &::after {
+      content: "";
+      position: relative;
+      top: -38px;
+      left: 243px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: relative;
+      top: -38px;
+      left: 611px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: relative;
+      top: 0;
+      left: -19px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-mail.svg");
+      z-index: 1;
+    }
+  }
+}
+
 .impression__input[type="radio"] {
   display: none;
 }
@@ -353,36 +468,6 @@
     height: 22px;
     border-radius: 50%;
     background-color: $light-black;
-  }
-}
-
-@media (min-width: $mobile-width) {
-  .impression__list {
-    margin: 0;
-    padding: 0;
-    padding-top: 12px;
-    padding-bottom: 26px;
-  }
-
-  .impression__item {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 25px 20px 20px 98px;
-  }
-
-  .impression__input {
-    width: 56px;
-    margin: 0;
-    background-color: $light-gray;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .impression__list {
-    padding: 0;
-    padding-top: 12px;
   }
 }
 
@@ -428,6 +513,36 @@
         background-color: $light-gray;
       }
     }
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .impression__list {
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 26px;
+  }
+
+  .impression__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 25px 20px 20px 98px;
+  }
+
+  .impression__input {
+    width: 56px;
+    margin: 0;
+    background-color: $light-gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .impression__list {
+    padding: 0;
+    padding-top: 12px;
   }
 }
 
@@ -507,8 +622,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 28px 20px 20px 100px;
+    padding: 28px 20px 20px 90px;
   }
 
   @media (min-width: $tablet-width) {

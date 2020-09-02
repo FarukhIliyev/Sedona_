@@ -69,11 +69,11 @@
               <fieldset class="form-feedback__group сontact-information">
                 <legend class="form-feedback__title">Контактная информация:</legend>
                 <ul class="сontact-information__list">
-                  <li class="сontact-information__item">
+                  <li class="сontact-information__item contact__phone">
                     <label class="сontact-information__label" for="user-number">Телефон*:</label>
                     <input class="сontact-information__input" type="text" id="user-number" name="phone-number" placeholder="Введите телефон">
                   </li>
-                  <li class="сontact-information__item">
+                  <li class="сontact-information__item contact__mail">
                     <label class="сontact-information__label" for="user-e-mail">Электронная почта*:</label>
                     <input class="сontact-information__input" type="text" id="user-e-mail" name="e-mail" placeholder="Введите e-mail">
                   </li>
@@ -119,9 +119,10 @@
               </fieldset>
               <fieldset class="form-feedback__group describe-emotions">
                 <legend class="form-feedback__title">Опишите свои эмоции:</legend>
-                <textarea class="describe-emotions__text" placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea class="describe-emotions__text" name="describe-emotion" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
               <button class="form-feedback__button button" type="submit">Отправить отзыв</button>
+              <p class="form-feedback__text">* - обязательные поля</p>
             </form>
           </div>
         </section>
