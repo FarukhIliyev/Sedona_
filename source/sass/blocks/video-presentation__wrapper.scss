@@ -40,7 +40,8 @@
 
 .video__content {
   width: 320px;
-  height: 267px;
+  height: 201px;
+  margin-bottom: -45px;
   background-image: url("../img/slice-clip-mobile.jpg");
   background-repeat: no-repeat;
 }
@@ -49,6 +50,7 @@
   .video__content {
     width: 648px;
     height: 500px;
+    margin-bottom: -93px;
     background-image: url("../img/slice-clip-tablet.jpg");
   }
 }
@@ -66,25 +68,44 @@
 }
 
 .video__presentation {
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .video__controls-panel {
-  position: absolute;
-  left: 20px;
-  bottom: 70px;
-  width: 280px;
-  height: 45px;
-  background-color: $base-black;
-  opacity: 0.3;
+  @media (min-width: $mobile-width) {
+    margin: 0 auto;
+    width: 280px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 648px;
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 }
 
-.video__button {
-  position: absolute;
-  left: 20px;
-  bottom: 4px;
-  width: 280px;
-  height: 66px;
-  margin: 0 auto;
-  background-color: $base-gray;
+@media (min-width: $mobile-width) {
+  .video__button {
+    width: 280px;
+    height: 66px;
+    margin: 0 auto;
+    background-color: $base-gray;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .video__button {
+    display: none;
+  }
 }
