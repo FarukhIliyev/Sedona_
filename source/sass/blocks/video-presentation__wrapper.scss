@@ -75,6 +75,7 @@
 
 .video__controls-panel {
   @media (min-width: $mobile-width) {
+    position: relative;
     margin: 0 auto;
     width: 280px;
     height: 45px;
@@ -85,27 +86,320 @@
   @media (min-width: $tablet-width) {
     width: 648px;
     height: 93px;
+    margin-bottom: -93px;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
   @media (min-width: $desktop-width) {
     width: 800px;
     height: 93px;
+    margin-bottom: -93px;
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
-@media (min-width: $mobile-width) {
-  .video__button {
+.video__toggle {
+  @media (min-width: $mobile-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 22px;
+      width: 235px;
+      height: 3px;
+      background-color: rgba(204, 204, 204, 0.2);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 58px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 45px;
+      left: 93px;
+      width: 389px;
+      height: 3px;
+      background-color: rgba(204, 204, 204, 0.2);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 206px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 45px;
+      left: 93px;
+      width: 540px;
+      height: 3px;
+      background-color: rgba(204, 204, 204, 0.2);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40px;
+      left: 206px;
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      cursor: pointer;
+    }
+  }
+}
+
+.video__button {
+  @media (min-width: $mobile-width) {
+    position: relative;
     width: 280px;
     height: 66px;
     margin: 0 auto;
     background-color: $base-gray;
   }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 648px;
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 3;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 800px;
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 3;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .video__button-replay {
+    position: absolute;
+    top: 22px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 20px;
+      mask-image: url("../img/icon-video-replay.svg");
+      background-color: $special-gray;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  .video__button-subs {
+    position: absolute;
+    top: 22px;
+    left: 174px;
+    width: 32px;
+    height: 20px;
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 32px;
+      height: 20px;
+      mask-image: url("../img/icon-video-subtitles.svg");
+      background-color: $special-gray;
+      cursor: pointer;
+    }
+  }
+
+  .video__button-fullscreen {
+    position: absolute;
+    top: 22px;
+    left: 237px;
+    width: 20px;
+    height: 20px;
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      mask-image: url("../img/icon-video-fullscreen.svg");
+      background-color: $special-gray;
+      cursor: pointer;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .video__button {
-    display: none;
+  .video__button-replay {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 20px;
+      mask-image: url("../img/icon-video-replay.svg");
+      background-color: $base-white;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  .video__button-subs {
+    position: absolute;
+    top: 36px;
+    left: 524px;
+    width: 32px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 32px;
+      height: 20px;
+      mask-image: url("../img/icon-video-subtitles.svg");
+      background-color: $base-white;
+      cursor: pointer;
+    }
+  }
+
+  .video__button-fullscreen {
+    position: absolute;
+    top: 36px;
+    left: 587px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      mask-image: url("../img/icon-video-fullscreen.svg");
+      background-color: $base-white;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video__button-replay {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 16px;
+      height: 20px;
+      mask-image: url("../img/icon-video-replay.svg");
+      background-color: $base-white;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  .video__button-subs {
+    position: absolute;
+    top: 36px;
+    left: 675px;
+    width: 32px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 32px;
+      height: 20px;
+      mask-image: url("../img/icon-video-subtitles.svg");
+      background-color: $base-white;
+      cursor: pointer;
+    }
+  }
+
+  .video__button-fullscreen {
+    position: absolute;
+    top: 36px;
+    left: 738px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      mask-image: url("../img/icon-video-fullscreen.svg");
+      background-color: $base-white;
+      cursor: pointer;
+    }
   }
 }
