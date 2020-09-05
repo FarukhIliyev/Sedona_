@@ -206,18 +206,19 @@
     width: 20px;
     height: 20px;
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 20px;
-      mask-image: url("../img/icon-video-replay.svg");
-      background-color: $special-gray;
-      background-repeat: no-repeat;
-      cursor: pointer;
+    .button-replay__image {
+      fill: $special-gray;
+
+      &:hover {
+        fill: $light-black;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 
@@ -228,17 +229,19 @@
     width: 32px;
     height: 20px;
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 32px;
-      height: 20px;
-      mask-image: url("../img/icon-video-subtitles.svg");
-      background-color: $special-gray;
-      cursor: pointer;
+    .button-subs__image {
+      fill: $special-gray;
+
+      &:hover {
+        fill: $light-black;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 
@@ -249,17 +252,19 @@
     width: 20px;
     height: 20px;
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      mask-image: url("../img/icon-video-fullscreen.svg");
-      background-color: $special-gray;
-      cursor: pointer;
+    .button-fullscreen__image {
+      fill: $special-gray;
+
+      &:hover {
+        fill: $light-black;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -273,18 +278,21 @@
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 20px;
-      mask-image: url("../img/icon-video-replay.svg");
-      background-color: $base-white;
-      background-repeat: no-repeat;
-      cursor: pointer;
+    .button-replay__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 
@@ -296,17 +304,21 @@
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 32px;
-      height: 20px;
-      mask-image: url("../img/icon-video-subtitles.svg");
-      background-color: $base-white;
-      cursor: pointer;
+    .button-subs__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 
@@ -318,18 +330,21 @@
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
     cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      mask-image: url("../img/icon-video-fullscreen.svg");
-      background-color: $base-white;
-      cursor: pointer;
+    .button-fullscreen__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -343,18 +358,21 @@
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 20px;
-      mask-image: url("../img/icon-video-replay.svg");
-      background-color: $base-white;
-      background-repeat: no-repeat;
-      cursor: pointer;
+    .button-replay__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 
@@ -366,17 +384,21 @@
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 32px;
-      height: 20px;
-      mask-image: url("../img/icon-video-subtitles.svg");
-      background-color: $base-white;
-      cursor: pointer;
+    .button-subs__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 
@@ -388,18 +410,21 @@
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
     cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      mask-image: url("../img/icon-video-fullscreen.svg");
-      background-color: $base-white;
-      cursor: pointer;
+    .button-fullscreen__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 }
