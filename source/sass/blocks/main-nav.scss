@@ -52,6 +52,14 @@
   @media (min-width: $tablet-width) {
     border: none;
     width: 25%;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0,);
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0,);
+    }
   }
 
   @media (min-width: $desktop-width) {
