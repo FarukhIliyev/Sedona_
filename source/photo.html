@@ -36,7 +36,11 @@
       <main class="page-main container">
         <section class="intro">
           <div class="intro__wrapper">
-            <img class="intro__image" src="img/slice-mobile.jpg" width="320" height="158" alt="">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/slice-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/slice-tablet.jpg">
+              <img class="intro__image" src="img/slice-mobile.jpg" width="320" height="158" alt="">
+            </picture>
           </div>
         </section>
         <section class="photo-video">
@@ -50,7 +54,11 @@
             <section class="photo-video__photo-catalog catalog">
               <ul class="catalog__list">
                 <li class="catalog__item catalog__item--vast">
-                  <img class="catalog__photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фотография закат солнца">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
+                    <img class="catalog__photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фотография закат солнца">
+                  </picture>
                   <section class="catalog__info-wrapper">
                     <h2 class="catalog__title">Неродные просторы</h2>
                     <p class="catalog__text">Автор фото: Борис</p>
@@ -69,7 +77,11 @@
                   </section>
                 </li>
                 <li class="catalog__item catalog__item--vegetation">
-                  <img class="catalog__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография кактус">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                    <img class="catalog__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография кактус">
+                  </picture>
                   <section class="catalog__info-wrapper">
                     <h2 class="catalog__title">Местная растительность</h2>
                     <p class="catalog__text">Автор фото: Сергей</p>
@@ -88,7 +100,11 @@
                   </section>
                 </li>
                 <li class="catalog__item catalog__item--north">
-                  <img class="catalog__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фотография горная дорога">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
+                    <img class="catalog__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фотография горная дорога">
+                  </picture>
                   <section class="catalog__info-wrapper catalog__info-wrapper--north">
                     <h2 class="catalog__title">Дорога на север</h2>
                     <p class="catalog__text">Автор фото: Петр</p>
@@ -107,7 +123,11 @@
                   </section>
                 </li>
                 <li class="catalog__item catalog__item--bridge">
-                  <img class="catalog__photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография каньон">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                    <img class="catalog__photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография каньон">
+                  </picture>
                   <section class="catalog__info-wrapper">
                     <h2 class="catalog__title">Мост дьявола</h2>
                     <p class="catalog__text">Автор фото: Антон</p>
@@ -204,7 +224,7 @@
           <h2 class="visually-hidden">Копирайтер</h2>
           <span class="copyright__text">Разработано</span>
           <a class="copyright__logo-link" href="#" aria-label="Переход на главную страницу htmlacademy">
-            <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="copyright__image" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
             </svg>
           </a>

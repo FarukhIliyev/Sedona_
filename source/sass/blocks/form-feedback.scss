@@ -237,6 +237,19 @@
     padding-bottom: 16px;
     background-color: $light-gray;
     border: none;
+    outline: none;
+
+    &:hover {
+      background-color: $special-navy-gray;
+    }
+
+    &:active {
+      padding-top: 12px;
+      padding-left: 19px;
+      padding-bottom: 12px;
+      background-color: $base-white;
+      border: 4px solid $special-navy-gray;
+    }
   }
 }
 
@@ -293,9 +306,22 @@
     width: 100%;
     padding-top: 16px;
     padding-left: 23px;
-    padding-bottom: 16px;
+    padding-bottom: 17px;
     background-color: $light-gray;
     border: none;
+    outline: none;
+
+    &:hover {
+      background-color: $special-navy-gray;
+    }
+
+    &:active {
+      padding-top: 12px;
+      padding-left: 19px;
+      padding-bottom: 12px;
+      background-color: $base-white;
+      border: 4px solid $special-navy-gray;
+    }
   }
 
   .сontact-information__label {
@@ -503,6 +529,11 @@
     border-radius: 50%;
     background-color: $light-black;
   }
+
+  &:active::after {
+    background-color: $light-black;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $mobile-width) {
@@ -516,6 +547,14 @@
       height: 56px;
       border-radius: 50%;
       background-color: $light-gray;
+    }
+
+    &:hover::before {
+      background-color: $special-navy-gray;
+    }
+
+    &:active::before {
+      background-color: $dark-gray-special;
     }
   }
 
@@ -531,6 +570,14 @@
         border-radius: 50%;
         background-color: $light-gray;
       }
+
+      &:hover::before {
+        background-color: $special-navy-gray;
+      }
+
+      &:active::before {
+        background-color: $dark-gray-special;
+      }
     }
   }
 
@@ -545,6 +592,14 @@
         height: 56px;
         border-radius: 50%;
         background-color: $light-gray;
+      }
+
+      &:hover::before {
+        background-color: $special-navy-gray;
+      }
+
+      &:active::before {
+        background-color: $dark-gray-special;
       }
     }
   }
@@ -596,6 +651,10 @@
       background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
     }
+
+    &:active::after {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -607,6 +666,10 @@
       height: 17px;
       background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 
@@ -620,6 +683,10 @@
       height: 17px;
       background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 }
@@ -677,6 +744,14 @@
       border-radius: 10%;
       background-color: $light-gray;
     }
+
+    &:hover::before {
+      background-color: $special-navy-gray;
+    }
+
+    &:active::before {
+      background-color: $dark-gray-special;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -689,6 +764,14 @@
         height: 56px;
         border-radius: 10%;
         background-color: $light-gray;
+      }
+
+      &:hover::before {
+        background-color: $special-navy-gray;
+      }
+
+      &:active::before {
+        background-color: $dark-gray-special;
       }
     }
   }
@@ -704,6 +787,14 @@
         height: 56px;
         border-radius: 0;
         background-color: $light-gray;
+      }
+
+      &:hover::before {
+        background-color: $special-navy-gray;
+      }
+
+      &:active::before {
+        background-color: $dark-gray-special;
       }
     }
   }

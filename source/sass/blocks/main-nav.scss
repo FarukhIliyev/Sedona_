@@ -116,12 +116,14 @@
 }
 
 .main-nav__toggle {
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  background: none;
-  border: none;
-
+  @media (min-width: $mobile-width) {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    background: none;
+    border: none;
+    outline: none;
+  }
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -164,7 +166,7 @@
 
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
-    /*display: none;*/
+    /*display: none;   скрытое меню */
 
     &--active {
       display: block;
@@ -174,8 +176,8 @@
     }
   }
 }
-
-/*
+/*кнопка выключения крестик
+@media (min-width: $mobile-width) {
   .main-nav--opened .main-nav__toggle {
     &::before,
     &::after {
@@ -196,4 +198,18 @@
     &::after {
       transform: rotate(-45deg);
     }
-  }*/
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $base-white;
+      opacity: 0.6;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: $base-white;
+      opacity: 0.3;
+    }
+  }
+}
+*/
