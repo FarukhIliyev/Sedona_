@@ -11,7 +11,11 @@
       <header class="page-header container">
         <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
           <a class="page-header__logo">
-            <img class="page-header__logo-image" aria-label="Логотип Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" aria-label="Логотип Седона">
+            </picture>
           </a>
           <button class="main-nav__toggle" type="button" aria-label="Закрыть"></button>
           <ul class="main-nav__list site-list">
@@ -35,7 +39,18 @@
       </header>
       <main class="page-main container">
         <section class="intro">
-          <div class="intro__wrapper"></div>
+          <div class="intro__wrapper">
+            <svg class="intro__logo" width="461px" height="350px" viewBox="0 0 459.754 350.074" role="img" aria-label="Туристический городок Седона">
+              <g class="logo__sedona">
+                <path fill="#FFFFFF" d="M44.467,157.61c-3.572-2.979-8.139-4.963-12.902-4.963c-3.572,0-8.338,2.084-8.338,6.253 c0,4.368,5.261,6.055,8.636,7.146l4.964,1.489c10.422,3.077,18.461,8.337,18.461,20.447c0,7.445-1.787,15.088-7.742,20.15 c-5.855,4.963-13.697,7.047-21.24,7.047c-9.43,0-18.661-3.176-26.305-8.537l8.338-15.682c4.865,4.268,10.621,7.742,17.271,7.742 c4.566,0,9.43-2.283,9.43-7.545c0-5.459-7.643-7.344-11.812-8.535c-12.208-3.475-20.249-6.65-20.249-21.143 c0-15.188,10.818-25.112,25.807-25.112c7.543,0,16.775,2.382,23.426,6.154L44.467,157.61z"/>
+                <path fill="#FFFFFF" d="M91.832,154.831v12.506h21.937v16.479H91.832v12.9h23.127v16.479H72.377v-74.84h42.582v16.477H91.832z"/>
+                <path fill="#FFFFFF" d="M129.418,138.354h27.594c20.844,0,38.016,16.377,38.016,37.42c0,21.041-17.271,37.42-38.016,37.42h-27.594 V138.354z M148.873,196.718h4.367c11.612,0,21.539-6.352,21.539-20.943c0-13.4-8.834-20.943-21.341-20.943h-4.565V196.718z"/>
+                <path fill="#FFFFFF" d="M286.874,174.385c0,24.219-17.371,41.292-41.393,41.292c-24.02,0-41.391-17.072-41.391-41.292 c0-22.632,19.852-38.513,41.391-38.513S286.874,151.753,286.874,174.385z M224.34,174.484c0,12.904,9.529,22.333,21.141,22.333 c11.613,0,21.143-9.43,21.143-22.333c0-10.323-9.527-19.752-21.143-19.752C233.868,154.732,224.34,164.162,224.34,174.484z"/>
+                <path fill="#FFFFFF" d="M297.239,138.354h19.455l35.635,45.758h0.197v-45.758h19.453v74.84h-19.453l-35.635-45.857h-0.197v45.857 h-19.455V138.354z"/>
+                <path fill="#FFFFFF" d="M407.346,200.192l-5.16,13.002H381.54l28.785-74.84h21.242l28.188,74.84H439.01l-4.863-13.002H407.346z M420.946,161.481h-0.199l-8.039,23.823h16.178L420.946,161.481z"/>
+              </g>
+            </svg>
+          </div>
         </section>
         <section class="photo-video">
           <section class="photo-video__info">
@@ -49,9 +64,9 @@
               <ul class="catalog__list">
                 <li class="catalog__item catalog__item--vast">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg">
-                    <img class="catalog__photo" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Фотография закат солнца">
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg, img/photo-sunset-desktop@2x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg">
+                    <img class="catalog__photo" srcset="img/photo-sunset-mobile@1x.jpg, img/photo-sunset-mobile@2x.jpg" width="280" height="280" alt="Фотография закат солнца">
                   </picture>
                   <section class="catalog__info-wrapper">
                     <h2 class="catalog__title">Неродные просторы</h2>
@@ -72,9 +87,9 @@
                 </li>
                 <li class="catalog__item catalog__item--vegetation">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg">
-                    <img class="catalog__photo" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Фотография кактус">
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg, img/photo-cactus-desktop@2x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg">
+                    <img class="catalog__photo" srcset="img/photo-cactus-mobile@1x.jpg, img/photo-cactus-mobile@2x.jpg" width="280" height="280" alt="Фотография кактус">
                   </picture>
                   <section class="catalog__info-wrapper">
                     <h2 class="catalog__title">Местная растительность</h2>
@@ -95,9 +110,9 @@
                 </li>
                 <li class="catalog__item catalog__item--north">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg">
-                    <img class="catalog__photo" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Фотография горная дорога">
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg, img/photo-roads-desktop@2x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg">
+                    <img class="catalog__photo" srcset="img/photo-roads-mobile@1x.jpg, img/photo-roads-mobile@2x.jpg" width="280" height="280" alt="Фотография горная дорога">
                   </picture>
                   <section class="catalog__info-wrapper catalog__info-wrapper--north">
                     <h2 class="catalog__title">Дорога на север</h2>
@@ -118,9 +133,9 @@
                 </li>
                 <li class="catalog__item catalog__item--bridge">
                   <picture>
-                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg">
-                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg">
-                    <img class="catalog__photo" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Фотография каньон">
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg, img/photo-bridge-desktop@2x.jpg">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg">
+                    <img class="catalog__photo" srcset="img/photo-bridge-mobile@1x.jpg, img/photo-bridge-mobile@2x.jpg" width="280" height="280" alt="Фотография каньон">
                   </picture>
                   <section class="catalog__info-wrapper">
                     <h2 class="catalog__title">Мост дьявола</h2>

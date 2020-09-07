@@ -1,6 +1,8 @@
 .features__reason-four {
-  width: 320px;
-  text-align: center;
+  @media (min-width: $mobile-width) {
+    width: 320px;
+    text-align: center;
+  }
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -8,5 +10,27 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .reason-four__title {
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reason-four__title {
+    br {
+      display: block;
+    }
+  }
+
+  .reason-four__description {
+    br {
+      display: block;
+    }
   }
 }
