@@ -13,12 +13,26 @@
 }
 
 .features__main-reason__wrapper {
-  background-color: $base-blue;
+  @media (min-width: $mobile-width) {
+    position: relative;
+    background-color: $base-blue;
+
+    .features__triangle-blue {
+      position: absolute;
+      left: 0;
+      fill: $base-blue;
+      background-color: $base-white;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
     width: 768px;
+
+    .features__triangle-blue {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {

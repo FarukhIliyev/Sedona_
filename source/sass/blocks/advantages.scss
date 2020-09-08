@@ -33,7 +33,7 @@
     .advantages__image {
       position: absolute;
       top: -10px;
-      left: 21px;
+      left: 20px;
       width: 39px;
       height: 37px;
     }
@@ -113,8 +113,17 @@
   }
 }
 
-.advantages__item--food {
-  @media (min-width: $tablet-width) {
-    order: 2;
+@media (min-width: $tablet-width) {
+  .advantages__item--housing {
+    grid-column: 1 / 2;
+  }
+
+  .advantages__item--souvenirs {
+    grid-column: 3 / 4;
+  }
+
+  .advantages__item--food {
+    grid-row: 1;
+    grid-column: 2 / 3;
   }
 }

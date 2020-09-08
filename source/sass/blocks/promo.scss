@@ -1,8 +1,9 @@
 .promo {
-  position: relative;
-  width: 320px;
-  text-align: center;
-  margin: 0;
+  @media (min-width: $mobile-width) {
+    width: 320px;
+    text-align: center;
+    margin: 0;
+  }
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -15,6 +16,7 @@
 
 .promo__wrapper {
   @media (min-width: $mobile-width) {
+    position: relative;
     height: 388px;
     background-image: url("../img/bg-back-mobile@1x.jpg");
     background-position: center;
@@ -49,6 +51,27 @@
   }
 }
 
+.logo__triangle-white {
+  position: absolute;
+  top: 244px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 461px;
+    display: block;
+    width: 768px;
+    height: 57px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 461px;
+    display: block;
+    width: 1200px;
+    height: 57px;
+  }
+}
+
 .promo__info {
   @media (min-width: $mobile-width) {
     padding-top: 35px;
@@ -66,19 +89,19 @@
   }
 }
 
-.promo__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0;
-  text-transform: uppercase;
-  color: $base-black;
-}
+@media (min-width: $mobile-width) {
+  .promo__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    text-transform: uppercase;
+    color: $base-black;
+  }
 
-.promo__description {
-  @media (min-width: $mobile-width) {
+  .promo__description {
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;

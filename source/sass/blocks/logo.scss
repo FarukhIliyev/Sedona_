@@ -19,18 +19,13 @@
 }
 
 .intro__logo {
-  @media (min-width: $mobile-width) {
-    width: 257px;
-    height: 174px;
-    margin-top: -17px;
-  }
+  width: 257px;
+  height: 174px;
+  margin-top: -17px;
 
   @media (min-width: $tablet-width) {
     display: block;
-    width: 461px;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 77px;
+
   }
 
   @media (min-width: $desktop-width) {
