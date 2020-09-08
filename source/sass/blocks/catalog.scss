@@ -1,84 +1,161 @@
-.catalog__list {
-  margin: 0;
-  padding: 0;
-}
+@media (min-width: $mobile-width) {
+  .catalog__list {
+    margin: 0;
+    padding: 0;
+  }
 
-.catalog__item {
-  width: 320px;
-  height: 416px;
-  list-style: none;
-
-  @media (min-width: $mobile-width) {
+  .catalog__item {
     padding: 20px;
+    padding-top: 22px;
+    width: 320px;
+    list-style: none;
+    border-top: 1px solid $base-gray;
   }
 
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
-}
-
-.catalog__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.catalog__text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0;
-}
-
-.catalog__number {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0;
-}
-
-.catalog__wrapper {
-  @media (min-width: $tablet-width) {
-    padding: 0 60px;
+  .catalog__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 17px;
+    text-transform: uppercase;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    margin: 0 auto;
-    max-width: 1200px;
+  .catalog__text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 13px;
+  }
+
+  .catalog__number--vast {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-left: 35px;
+  }
+
+  .catalog__number {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-left: 35px;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .catalog__wrapper {
+    padding: 0 60px;
+  }
+
+  .catalog__info-wrapper {
+    display: block;
+    position: relative;
+    height: 80px;
+    background-color: $base-gray;
+    padding-top: 16px;
+    padding-left: 20px;
+  }
+
   .catalog__list {
     display: grid;
     grid-template-columns: 324px 324px;
     grid-template-rows: 480px 347px 347px;
   }
+
+  .catalog__item {
+    padding: 0;
+    border: none;
+  }
+
+  .catalog__title {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .catalog__number--vast {
+    position: absolute;
+    top: 31px;
+    left: 597px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .catalog__number {
+    position: absolute;
+    top: 33px;
+    left: 243px;
+  }
+
+  .catalog__photo {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog__wrapper {
+    padding: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+  .catalog__info-wrapper {
+    display: block;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: $base-white;
+  }
+
   .catalog__list {
     display: grid;
     grid-template-columns: 400px 400px 400px;
     grid-template-rows: 400px 267px;
-  }
-}
-
-.catalog__photo {
-  @media (min-width: $tablet-width) {
-    display: none;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 
-  @media (min-width: $desktop-width) {
+  .catalog__item {
+    border: 1px solid $base-black;
+  }
+
+  .catalog__title {
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  .catalog__number--vast {
+    position: absolute;
+    top: 31px;
+    left: 1148px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .catalog__number {
+    position: absolute;
+    top: 27px;
+    left: 314px;
+  }
+
+  .catalog__photo {
     display: none;
   }
 }
@@ -131,6 +208,10 @@
     height: 347px;
     background-image: url("../img/photo-roads-tablet@1x.jpg");
     background-repeat: no-repeat;
+
+    .catalog__info-wrapper--north {
+      background-color: $base-gray-special;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -140,6 +221,10 @@
     height: 267px;
     background-image: url("../img/photo-roads-desktop@1x.jpg");
     background-repeat: no-repeat;
+
+    .catalog__info-wrapper--north {
+      background-color: rgba(0, 0, 0, 0.25);
+    }
   }
 }
 
@@ -163,20 +248,66 @@
   }
 }
 
-.catalog__info-wrapper {
+.catalog__like {
+  @media (min-width: $mobile-width) {
+    position: absolute;
+    left: 14px;
+    width: 23px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.3;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 22px;
+      height: 20px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    display: block;
-    height: 80px;
-    background-color: $base-gray;
+    position: absolute;
+    top: 31px;
+    left: 239px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 26px;
+    left: 310px;
+    fill: $base-white;
+    opacity: 1;
+  }
+}
+
+.catalog__like--vast {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 30px;
+    left: 560px;
+    width: 23px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
     cursor: pointer;
   }
 
   @media (min-width: $desktop-width) {
-    display: block;
-    height: 80px;
-    background-color: $base-black;
-    color: $base-white;
-    opacity: 0.3;
+    position: absolute;
+    left: 1108px;
+    width: 23px;
+    height: 20px;
+    fill: $base-white;
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
     cursor: pointer;
+    opacity: 1;
   }
 }

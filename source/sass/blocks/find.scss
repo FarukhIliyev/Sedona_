@@ -73,4 +73,12 @@
     margin-left: 371px;
     margin-right: 371px;
   }
+
+  &:hover {
+    background-color: $special-dark-blue;
+  }
+
+  &:active {
+    background-color: $special-navy-blue;
+  }
 }

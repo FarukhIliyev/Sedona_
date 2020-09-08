@@ -17,8 +17,8 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    outline: 5px solid rgba(0, 255, 0, 0.8);
-    outline-offset: -5px;
+    /*outline: 5px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -5px;*/
   }
 }
 
@@ -99,22 +99,72 @@
 }
 
 .form-feedback__button {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  padding-top: 20px;
-  padding-left: 48px;
-  padding-right: 47px;
-  padding-bottom: 22px;
-  background-color: $base-blue;
-  color: $base-white;
-  text-decoration: none;
-  text-transform: uppercase;
-  border: none;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    width: 280px;
+    height: 58px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    background-color: $base-blue;
+    color: $base-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+    height: 58px;
+  }
+
+  &:hover {
+    background-color: $special-dark-blue;
+  }
+
+  &:active {
+    background-color: $special-navy-blue;
+  }
+}
+
+.form-feedback__text {
+  @media (min-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding-top: 35px;
+    padding-left: 164px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding-top: 35px;
+    padding-left: 326px;
+  }
 }
 
 .form-feedback__leave-feedback {
@@ -155,6 +205,10 @@
   .form-feedback__button {
     grid-row: 5 / 6;
   }
+
+  .form-feedback__text {
+    grid-row: 5 / 7;
+  }
 }
 
 @media (min-width: $mobile-width) {
@@ -183,6 +237,19 @@
     padding-bottom: 16px;
     background-color: $light-gray;
     border: none;
+    outline: none;
+
+    &:hover {
+      background-color: $special-navy-gray;
+    }
+
+    &:active {
+      padding-top: 12px;
+      padding-left: 19px;
+      padding-bottom: 12px;
+      background-color: $base-white;
+      border: 4px solid $special-navy-gray;
+    }
   }
 }
 
@@ -229,6 +296,7 @@
   }
 
   .сontact-information__item {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -238,9 +306,22 @@
     width: 100%;
     padding-top: 16px;
     padding-left: 23px;
-    padding-bottom: 16px;
+    padding-bottom: 17px;
     background-color: $light-gray;
     border: none;
+    outline: none;
+
+    &:hover {
+      background-color: $special-navy-gray;
+    }
+
+    &:active {
+      padding-top: 12px;
+      padding-left: 19px;
+      padding-bottom: 12px;
+      background-color: $base-white;
+      border: 4px solid $special-navy-gray;
+    }
   }
 
   .сontact-information__label {
@@ -261,15 +342,6 @@
       align-items: center;
       justify-content: space-between;
       width: 960px;
-
-      .contact-telephone {
-        flex-grow: 1;
-      }
-
-      .contact-email {
-        flex-grow: 2;
-        justify-content: flex-end;
-      }
     }
   }
 
@@ -279,7 +351,6 @@
     padding: 0;
 
     @media (min-width: $desktop-width) {
-      position: relative;
       align-items: center;
       margin-top: 47px;
       /*outline: 5px solid rgba(0, 255, 0, 0.8);
@@ -315,9 +386,9 @@
   @media (min-width: $mobile-width) {
     &::before {
       content: "";
-      position: relative;
-      top: 58px;
-      left: 222px;
+      position: absolute;
+      top: 63px;
+      left: 242px;
       width: 58px;
       height: 58px;
       background-color: $dark-gray;
@@ -327,11 +398,41 @@
   @media (min-width: $tablet-width) {
     &::before {
       content: "";
-      top: 58px;
+      position: absolute;
+      top: 43px;
       left: 590px;
       width: 58px;
       height: 58px;
       background-color: $dark-gray;
+    }
+  }
+}
+
+.contact__phone {
+  @media (min-width: $mobile-width) {
+    &::after {
+      content: "";
+      position: relative;
+      top: -38px;
+      left: 243px;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: relative;
+      top: -38px;
+      left: 611px;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/icon-phone.svg");
+      cursor: pointer;
     }
   }
 
@@ -339,11 +440,76 @@
     &::before {
       content: "";
       position: absolute;
-      left: 360px;
       top: 0;
+      left: 346px;
       width: 58px;
       height: 58px;
       background-color: $dark-gray;
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      top: 0;
+      left: -37px;
+      width: 18px;
+      height: 18px;
+      background-image: url("../img/icon-phone.svg");
+      cursor: pointer;
+      z-index: 1;
+    }
+  }
+}
+
+.contact__mail {
+  @media (min-width: $mobile-width) {
+    &::after {
+      content: "";
+      position: relative;
+      top: -38px;
+      left: 243px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "";
+      position: relative;
+      top: -38px;
+      left: 611px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-mail.svg");
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 424px;
+      width: 58px;
+      height: 58px;
+      background-color: $dark-gray;
+    }
+
+    &::after {
+      content: "";
+      position: relative;
+      top: 0;
+      left: -37px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/icon-mail.svg");
+      cursor: pointer;
+      z-index: 1;
     }
   }
 }
@@ -362,6 +528,80 @@
     height: 22px;
     border-radius: 50%;
     background-color: $light-black;
+  }
+
+  &:active::after {
+    background-color: $light-black;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $mobile-width) {
+  .impression__label {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: $light-gray;
+    }
+
+    &:hover::before {
+      background-color: $special-navy-gray;
+    }
+
+    &:active::before {
+      background-color: $dark-gray-special;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .impression__label {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $light-gray;
+      }
+
+      &:hover::before {
+        background-color: $special-navy-gray;
+      }
+
+      &:active::before {
+        background-color: $dark-gray-special;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .impression__label {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: $light-gray;
+      }
+
+      &:hover::before {
+        background-color: $special-navy-gray;
+      }
+
+      &:active::before {
+        background-color: $dark-gray-special;
+      }
+    }
   }
 }
 
@@ -395,51 +635,6 @@
   }
 }
 
-@media (min-width: $mobile-width) {
-  .impression__label {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 10px;
-      left: 20px;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background-color: $light-gray;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    .impression__label {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 20px;
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        background-color: $light-gray;
-      }
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    .impression__label {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 20px;
-        width: 56px;
-        height: 56px;
-        border-radius: 50%;
-        background-color: $light-gray;
-      }
-    }
-  }
-}
-
 .special-places__input[type="checkbox"] {
   display: none;
 }
@@ -456,6 +651,10 @@
       background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
     }
+
+    &:active::after {
+      opacity: 0.3;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -467,6 +666,10 @@
       height: 17px;
       background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 
@@ -480,6 +683,10 @@
       height: 17px;
       background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 }
@@ -516,8 +723,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 28px 20px 20px 100px;
+    padding: 28px 20px 20px 90px;
   }
 
   @media (min-width: $tablet-width) {
@@ -538,6 +744,14 @@
       border-radius: 10%;
       background-color: $light-gray;
     }
+
+    &:hover::before {
+      background-color: $special-navy-gray;
+    }
+
+    &:active::before {
+      background-color: $dark-gray-special;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -550,6 +764,14 @@
         height: 56px;
         border-radius: 10%;
         background-color: $light-gray;
+      }
+
+      &:hover::before {
+        background-color: $special-navy-gray;
+      }
+
+      &:active::before {
+        background-color: $dark-gray-special;
       }
     }
   }
@@ -565,6 +787,14 @@
         height: 56px;
         border-radius: 0;
         background-color: $light-gray;
+      }
+
+      &:hover::before {
+        background-color: $special-navy-gray;
+      }
+
+      &:active::before {
+        background-color: $dark-gray-special;
       }
     }
   }

@@ -39,11 +39,27 @@
     list-style: none;
     border-top: 1px solid $base-light-blue;
     border-bottom: 1px solid $base-dark-blue;
+
+    &:hover {
+      background-color: $special-dark-blue;
+    }
+
+    &:active {
+      background-color: $special-navy-blue;
+    }
   }
 
   @media (min-width: $tablet-width) {
     border: none;
     width: 25%;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0,);
+    }
+
+    &:active {
+      background-color: rgba(0, 0, 0, 0,);
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -59,17 +75,24 @@
 }
 
 .site-list__link {
-  display: block;
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  line-height: 40px;
-  color: $base-white;
-  text-decoration: none;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    display: block;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 40px;
+    color: $base-white;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-family: "PT Sans", "Arial", sans-serif;
@@ -80,15 +103,27 @@
     padding-bottom: 17px;
     line-height: 26px;
     color: $base-black;
+
+    &:hover {
+      color: $base-blue;
+    }
+
+    &:active {
+      color: $base-black;
+      opacity: 0.3;
+    }
   }
 }
 
 .main-nav__toggle {
-  position: absolute;
-  top: 17px;
-  right: 20px;
-  background: none;
-  border: none;
+  @media (min-width: $mobile-width) {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    background: none;
+    border: none;
+    outline: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -103,6 +138,7 @@
     right: 0;
     width: 63px;
     height: 52px;
+    outline: none;
     cursor: pointer;
   }
 
@@ -118,12 +154,20 @@
       background-color: $base-blue;
       box-shadow: 0 8px 0 0 $base-blue, 0 16px 0 0 $base-blue;
     }
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (max-width: $mobile-width-only) {
   .main-nav--closed .site-list__item {
-    /*display: none;*/
+    /*display: none;   скрытое меню */
 
     &--active {
       display: block;
@@ -133,8 +177,8 @@
     }
   }
 }
-
-/*
+/*кнопка выключения крестик
+@media (min-width: $mobile-width) {
   .main-nav--opened .main-nav__toggle {
     &::before,
     &::after {
@@ -155,4 +199,18 @@
     &::after {
       transform: rotate(-45deg);
     }
-  }*/
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $base-white;
+      opacity: 0.6;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: $base-white;
+      opacity: 0.3;
+    }
+  }
+}
+*/
