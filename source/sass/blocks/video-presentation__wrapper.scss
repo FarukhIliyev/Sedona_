@@ -1,32 +1,10 @@
-.video__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  color: $base-black;
-  text-transform: uppercase;
-}
-
-.video__text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $light-black;
-  text-transform: uppercase;
-}
-
-.video__content {
-  width: 320px;
-  height: 201px;
-  margin-bottom: -45px;
-  background-image: url("../img/slice-clip-mobile.jpg");
-  background-repeat: no-repeat;
-}
-
 @media (min-width: $mobile-width) {
+  .video__presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
   .video__info {
     text-align: center;
     padding-left: 43px;
@@ -36,14 +14,37 @@
   .video__wrapper {
     border-top: 1px solid $base-gray;
   }
+
+  .video__content {
+    width: 320px;
+    height: 201px;
+    margin-bottom: -45px;
+  }
+
+  .video__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  .video__text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $light-black;
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: $tablet-width) {
-  .video__content {
-    width: 648px;
-    height: 500px;
-    margin-bottom: -93px;
-    background-image: url("../img/slice-clip-tablet.jpg");
+  .video__wrapper {
+    border: none;
   }
 
   .video__info {
@@ -51,8 +52,15 @@
     padding-right: 102px;
   }
 
-  .video__wrapper {
-    border: none;
+  .video__content {
+    width: 648px;
+    height: 500px;
+    margin-bottom: -93px;
+  }
+
+  .video__clip {
+    width: 800px;
+    height: 500px;
   }
 }
 
@@ -69,14 +77,12 @@
   .video__content {
     width: 800px;
     height: 500px;
-    background-image: url("../img/slice-clip-desktop.jpg");
   }
-}
 
-.video__presentation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  .video__clip {
+    width: 800px;
+    height: 500px;
+  }
 }
 
 .video__controls-panel {

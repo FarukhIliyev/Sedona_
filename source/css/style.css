@@ -454,6 +454,8 @@ template {
     width: 320px;
     list-style: none;
     border-top: 1px solid #eeeeee; }
+  .catalog__info-wrapper {
+    text-align: start; }
   .catalog__title {
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
@@ -756,34 +758,19 @@ template {
     width: 400px; } }
 
 @media (min-width: 768px) {
-  .features__main-reason__image {
-    display: none; } }
-
-@media (min-width: 768px) {
-  .features__main-reason__image-wrapper--city {
+  .features__image-wrapper {
     width: 512px;
-    height: 256px;
-    background-image: url("../img/main-city-tablet@1x.jpg");
-    background-repeat: no-repeat; } }
+    height: 256px; }
+    .features__image-wrapper .image-wrapper {
+      width: 512px;
+      height: 256px; } }
 
 @media (min-width: 1200px) {
-  .features__main-reason__image-wrapper--city {
-    width: 800px;
-    background-image: url("../img/main-city-desktop@1x.jpg");
-    background-repeat: no-repeat; } }
-
-@media (min-width: 768px) {
-  .features__main-reason__image-wrapper--bridge {
-    width: 512px;
-    height: 256px;
-    background-image: url("../img/main-bridge-tablet@1x.jpg");
-    background-repeat: no-repeat; } }
-
-@media (min-width: 1200px) {
-  .features__main-reason__image-wrapper--bridge {
-    width: 800px;
-    background-image: url("../img/main-bridge-desktop@1x.jpg");
-    background-repeat: no-repeat; } }
+  .features__image-wrapper {
+    width: 800px; }
+    .features__image-wrapper .image-wrapper {
+      width: 800px;
+      height: 256px; } }
 
 @media (min-width: 320px) {
   .find {
@@ -1800,7 +1787,7 @@ template {
 @media (min-width: 320px) {
   .photo-video {
     width: 320px;
-    text-align: start;
+    text-align: center;
     margin-top: 30px; }
   .photo-video__info {
     text-align: center; }
@@ -1809,7 +1796,6 @@ template {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    margin: 0;
     line-height: 26px;
     color: #000000;
     text-transform: uppercase; }
@@ -1830,22 +1816,18 @@ template {
     width: 768px; }
   .photo-video__info {
     width: 768px;
-    height: 248px;
     text-align: center; }
   .photo-video__title {
     font-size: 30px;
-    margin: 0;
     padding-top: 66px; } }
 
 @media (min-width: 1200px) {
   .photo-video {
     width: 1200px; }
   .photo-video__info {
-    width: 1200px;
-    height: 285px; }
+    width: 1200px; }
   .photo-video__title {
     font-size: 30px;
-    margin: 0;
     padding-top: 102px; } }
 
 @media (min-width: 320px) {
@@ -1894,18 +1876,18 @@ template {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2400px auto; } }
 
-.logo__triangle-white {
+.promo__logo__triangle-white {
   position: absolute;
   top: 244px; }
   @media (min-width: 768px) {
-    .logo__triangle-white {
+    .promo__logo__triangle-white {
       position: absolute;
       top: 461px;
       display: block;
       width: 768px;
       height: 57px; } }
   @media (min-width: 1200px) {
-    .logo__triangle-white {
+    .promo__logo__triangle-white {
       position: absolute;
       top: 461px;
       display: block;
@@ -2046,50 +2028,51 @@ template {
   fill: #ffffff;
   opacity: 0.3; }
 
-.video__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  color: #000000;
-  text-transform: uppercase; }
-
-.video__text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: #333333;
-  text-transform: uppercase; }
-
-.video__content {
-  width: 320px;
-  height: 201px;
-  margin-bottom: -45px;
-  background-image: url("../img/slice-clip-mobile.jpg");
-  background-repeat: no-repeat; }
-
 @media (min-width: 320px) {
+  .video__presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; }
   .video__info {
     text-align: center;
     padding-left: 43px;
     padding-right: 32px; }
   .video__wrapper {
-    border-top: 1px solid #eeeeee; } }
+    border-top: 1px solid #eeeeee; }
+  .video__content {
+    width: 320px;
+    height: 201px;
+    margin-bottom: -45px; }
+  .video__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase; }
+  .video__text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    text-transform: uppercase; } }
 
 @media (min-width: 768px) {
-  .video__content {
-    width: 648px;
-    height: 500px;
-    margin-bottom: -93px;
-    background-image: url("../img/slice-clip-tablet.jpg"); }
+  .video__wrapper {
+    border: none; }
   .video__info {
     padding-left: 102px;
     padding-right: 102px; }
-  .video__wrapper {
-    border: none; } }
+  .video__content {
+    width: 648px;
+    height: 500px;
+    margin-bottom: -93px; }
+  .video__clip {
+    width: 800px;
+    height: 500px; } }
 
 @media (min-width: 1200px) {
   .video__wrapper {
@@ -2099,13 +2082,10 @@ template {
     padding-right: 177px; }
   .video__content {
     width: 800px;
-    height: 500px;
-    background-image: url("../img/slice-clip-desktop.jpg"); } }
-
-.video__presentation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end; }
+    height: 500px; }
+  .video__clip {
+    width: 800px;
+    height: 500px; } }
 
 @media (min-width: 320px) {
   .video__controls-panel {
