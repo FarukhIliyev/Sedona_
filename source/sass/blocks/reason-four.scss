@@ -12,14 +12,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 768px;
-    height: 330px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 1200px;
-    height: 330px;
   }
 }
 
@@ -44,33 +42,68 @@
   }
 }
 
-.reason-four__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0;
-  color: $base-black;
-  text-transform: uppercase;
+@media (min-width: $mobile-width) {
+  .reason-four__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  .reason-four__number {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-black;
+    text-transform: uppercase;
+  }
+
+  .reason-four__description {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-black;
+    text-transform: uppercase;
+  }
 }
 
-.reason-four__number {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: $light-black;
-  text-transform: uppercase;
-}
+@media (min-width: $tablet-width) {
+  .reason-four__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    color: $base-black;
+    text-transform: uppercase;
+  }
 
-.reason-four__description {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: $light-black;
-  text-transform: uppercase;
+  .reason-four__number {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-black;
+    text-transform: uppercase;
+  }
+
+  .reason-four__description {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-black;
+    text-transform: uppercase;
+  }
 }

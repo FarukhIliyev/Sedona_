@@ -408,7 +408,7 @@
   }
 }
 
-.contact__phone {
+.сontact-information--phone {
   @media (min-width: $mobile-width) {
     &::after {
       content: "";
@@ -461,7 +461,7 @@
   }
 }
 
-.contact__mail {
+.сontact-information--mail {
   @media (min-width: $mobile-width) {
     &::after {
       content: "";
