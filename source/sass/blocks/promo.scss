@@ -82,6 +82,7 @@
   @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0;
+    padding-top: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,6 +100,10 @@
     margin: 0;
     text-transform: uppercase;
     color: $base-black;
+
+    @media (min-width: $tablet-width) {
+      font-size: 21px;
+    }
   }
 
   .promo__description {
@@ -108,5 +113,10 @@
     margin-top: 35px;
     margin-bottom: 33px;
     color: $light-black;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 30px;
+      margin-bottom: 52px;
+    }
   }
 }

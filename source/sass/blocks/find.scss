@@ -2,7 +2,7 @@
   @media (min-width: $mobile-width) {
     text-align: center;
     margin: 0;
-    padding-top: 38px;
+    padding-top: 56px;
     padding-bottom: 49px;
   }
 
@@ -16,27 +16,35 @@
 }
 
 .find__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  margin: 0;
-  margin-bottom: 33px;
-  color: $base-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 25px;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+  }
 }
 
 .find__text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0;
-  margin-bottom: 33px;
-  color: $light-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 33px;
+    color: $light-black;
+    text-transform: uppercase;
+  }
 }
 
 .find__search {

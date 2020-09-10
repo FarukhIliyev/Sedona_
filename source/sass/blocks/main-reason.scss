@@ -2,13 +2,14 @@
   @media (min-width: $mobile-width) {
     text-transform: uppercase;
     color: $base-white;
-    padding-top: 45px;
-    padding-bottom: 39px;
+    padding-top: 35px;
+    padding-bottom: 25px;
   }
 
   @media (min-width: $tablet-width) {
     width: 256px;
     height: 256px;
+    padding-top: 42px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -37,6 +38,8 @@
       br {
         display: block;
       }
+
+      font-size: 21px;
     }
   }
 }
@@ -48,6 +51,11 @@
   font-size: 14px;
   line-height: 21px;
   color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
 }
 
 .main-reason__description {

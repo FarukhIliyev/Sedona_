@@ -42,7 +42,7 @@
   @media (min-width: $tablet-width) {
     width: 256px;
     text-align: center;
-    padding-top: 164px;
+    padding-top: 159px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -72,15 +72,22 @@
 }
 
 .advantages__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0;
-  margin-bottom: 20px;
-  line-height: 26px;
-  color: $base-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 26px;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 23px;
+  }
 }
 
 .advantages__description {
@@ -120,6 +127,7 @@
 
   .advantages__item--souvenirs {
     grid-column: 3 / 4;
+    padding-top: 170px;
   }
 
   .advantages__item--food {

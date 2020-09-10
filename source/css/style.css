@@ -379,7 +379,7 @@ template {
   .advantages__item {
     width: 256px;
     text-align: center;
-    padding-top: 164px;
+    padding-top: 159px;
     padding-left: 20px;
     padding-right: 20px; }
     .advantages__item .advantages__image {
@@ -402,16 +402,22 @@ template {
       width: 75px;
       height: 72px; } }
 
-.advantages__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0;
-  margin-bottom: 20px;
-  line-height: 26px;
-  color: #000000;
-  text-transform: uppercase; }
+@media (min-width: 320px) {
+  .advantages__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 26px;
+    color: #000000;
+    text-transform: uppercase; } }
+
+@media (min-width: 768px) {
+  .advantages__title {
+    font-size: 21px;
+    margin-bottom: 23px; } }
 
 @media (min-width: 320px) {
   .advantages__description {
@@ -439,7 +445,8 @@ template {
   .advantages__item--housing {
     grid-column: 1 / 2; }
   .advantages__item--souvenirs {
-    grid-column: 3 / 4; }
+    grid-column: 3 / 4;
+    padding-top: 170px; }
   .advantages__item--food {
     grid-row: 1;
     grid-column: 2 / 3; } }
@@ -729,6 +736,8 @@ template {
 
 @media (min-width: 320px) {
   .features__main-reason__wrapper {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
     background-color: #81b3d2; }
     .features__main-reason__wrapper .features__triangle-blue {
@@ -776,7 +785,7 @@ template {
   .find {
     text-align: center;
     margin: 0;
-    padding-top: 38px;
+    padding-top: 56px;
     padding-bottom: 49px; } }
 
 @media (min-width: 768px) {
@@ -787,27 +796,33 @@ template {
   .find {
     width: 1200px; } }
 
-.find__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
-  margin: 0;
-  margin-bottom: 33px;
-  color: #000000;
-  text-transform: uppercase; }
+@media (min-width: 320px) {
+  .find__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    margin-bottom: 25px;
+    color: #000000;
+    text-transform: uppercase; } }
 
-.find__text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  margin: 0;
-  margin-bottom: 33px;
-  color: #333333;
-  text-transform: uppercase; }
+@media (min-width: 768px) {
+  .find__title {
+    font-size: 30px; } }
+
+@media (min-width: 320px) {
+  .find__text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 33px;
+    color: #333333;
+    text-transform: uppercase; } }
 
 @media (min-width: 320px) {
   .find__search {
@@ -1713,13 +1728,14 @@ template {
   .main-reason {
     text-transform: uppercase;
     color: #ffffff;
-    padding-top: 45px;
-    padding-bottom: 39px; } }
+    padding-top: 35px;
+    padding-bottom: 25px; } }
 
 @media (min-width: 768px) {
   .main-reason {
     width: 256px;
     height: 256px;
+    padding-top: 42px;
     padding-left: 32px;
     padding-right: 32px; } }
 
@@ -1740,8 +1756,10 @@ template {
     .main-reason__title br {
       display: none; } }
   @media (min-width: 320px) and (min-width: 768px) {
-    .main-reason__title br {
-      display: block; } }
+    .main-reason__title {
+      font-size: 21px; }
+      .main-reason__title br {
+        display: block; } }
 
 .main-reason__number {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1750,6 +1768,10 @@ template {
   font-size: 14px;
   line-height: 21px;
   color: #ffffff; }
+  @media (min-width: 768px) {
+    .main-reason__number {
+      margin-top: 12px;
+      margin-bottom: 24px; } }
 
 .main-reason__description {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1903,7 +1925,8 @@ template {
 @media (min-width: 768px) {
   .promo__info {
     width: 768px;
-    margin: 0; } }
+    margin: 0;
+    padding-top: 46px; } }
 
 @media (min-width: 1200px) {
   .promo__info {
@@ -1918,7 +1941,12 @@ template {
     line-height: 26px;
     margin: 0;
     text-transform: uppercase;
-    color: #000000; }
+    color: #000000; } }
+  @media (min-width: 320px) and (min-width: 768px) {
+    .promo__title {
+      font-size: 21px; } }
+
+@media (min-width: 320px) {
   .promo__description {
     font-size: 14px;
     line-height: 26px;
@@ -1926,6 +1954,10 @@ template {
     margin-top: 35px;
     margin-bottom: 33px;
     color: #333333; } }
+  @media (min-width: 320px) and (min-width: 768px) {
+    .promo__description {
+      margin-top: 30px;
+      margin-bottom: 52px; } }
 
 .reason-four {
   background-color: #f2f2f2; }
@@ -1939,21 +1971,19 @@ template {
   .reason-four__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 768px;
-    height: 330px; } }
+    width: 768px; } }
 
 @media (min-width: 1200px) {
   .reason-four__list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 1200px;
-    height: 330px; } }
+    width: 1200px; } }
 
 @media (min-width: 320px) {
   .reason-four__item {
     list-style: none;
-    padding-top: 32px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 10px;
     width: 280px;
     margin: 0 auto;
     border-bottom: 1px solid #e6e6e6; } }
@@ -1961,6 +1991,8 @@ template {
 @media (min-width: 768px) {
   .reason-four__item {
     width: 256px;
+    padding-top: 44px;
+    padding-bottom: 40px;
     background-color: #eeeeee; } }
 
 @media (min-width: 1200px) {
@@ -1977,6 +2009,9 @@ template {
   margin: 0;
   color: #000000;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .reason-four__title {
+      font-size: 21px; } }
 
 .reason-four__number {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1986,15 +2021,30 @@ template {
   line-height: 21px;
   color: #333333;
   text-transform: uppercase; }
+  @media (min-width: 768px) {
+    .reason-four__number {
+      margin: 0;
+      margin-top: 12px;
+      margin-bottom: 23px; } }
 
-.reason-four__description {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: #333333;
-  text-transform: uppercase; }
+@media (min-width: 320px) {
+  .reason-four__description {
+    display: inline-block;
+    padding: 12px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0; } }
+
+@media (min-width: 768px) {
+  .reason-four__description {
+    padding: 0;
+    padding-left: 55px;
+    padding-right: 55px; } }
 
 .social__list {
   display: flex;
@@ -2617,7 +2667,7 @@ template {
     padding-top: 24px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 24; } }
+    padding-bottom: 24px; } }
 
 @media (min-width: 1200px) {
   .page-footer {
