@@ -24,8 +24,8 @@
 .reason-four__item {
   @media (min-width: $mobile-width) {
     list-style: none;
-    padding-top: 25px;
-    padding-bottom: 10px;
+    padding-top: 26px;
+    padding-bottom: 25px;
     width: 280px;
     margin: 0 auto;
     border-bottom: 1px solid $dark-gray;
@@ -34,26 +34,28 @@
   @media (min-width: $tablet-width) {
     width: 256px;
     padding-top: 44px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     background-color: $base-gray;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
     background-color: $base-gray;
+    padding-bottom: 64px;
   }
 }
 
-<<<<<<< HEAD
 .reason-four__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0;
-  color: $base-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    color: $base-black;
+    text-transform: uppercase;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
@@ -61,13 +63,17 @@
 }
 
 .reason-four__number {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: $light-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-black;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 13px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -79,81 +85,23 @@
 .reason-four__description {
   @media (min-width: $mobile-width) {
     display: inline-block;
-    padding: 12px;
-=======
-@media (min-width: $mobile-width) {
-  .reason-four__title {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
-    margin: 0;
-    color: $base-black;
-    text-transform: uppercase;
-  }
-
-  .reason-four__number {
+    padding-left: 12px;
+    padding-right: 12px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
-    color: $light-black;
-    text-transform: uppercase;
-  }
-
-  .reason-four__description {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    color: $light-black;
-    text-transform: uppercase;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .reason-four__title {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
     margin: 0;
-    color: $base-black;
-    text-transform: uppercase;
-  }
-
-  .reason-four__number {
->>>>>>> 5264aff70dc355bcee0e7bf30be3340fb9ce3a5d
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
+    margin-top: 17px;
     color: $light-black;
     text-transform: uppercase;
-<<<<<<< HEAD
-    margin: 0;
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-left: 55px;
     padding-right: 55px;
-=======
-  }
-
-  .reason-four__description {
-    font-family: "PT Sans", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    color: $light-black;
-    text-transform: uppercase;
->>>>>>> 5264aff70dc355bcee0e7bf30be3340fb9ce3a5d
+    margin: 0;
   }
 }

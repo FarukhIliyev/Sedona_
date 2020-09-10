@@ -2,12 +2,14 @@
   @media (min-width: $mobile-width) {
     text-align: center;
     margin: 0;
-    padding-top: 56px;
-    padding-bottom: 49px;
+    padding-top: 34px;
+    padding-bottom: 48px;
   }
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    padding-top: 58px;
+    padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,13 +25,14 @@
     font-size: 21px;
     line-height: 26px;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
     color: $base-black;
     text-transform: uppercase;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
+    margin-bottom: 33px;
   }
 }
 
@@ -44,6 +47,20 @@
     margin-bottom: 33px;
     color: $light-black;
     text-transform: uppercase;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: block;
+    }
+
+    margin-bottom: 39px;
   }
 }
 
@@ -67,10 +84,7 @@
 
   @media (min-width: $tablet-width) {
     width: 458px;
-    margin-top: 43px;
-    margin-left: 155px;
-    margin-right: 155px;
-    margin-bottom: 58px;
+    margin: 0 auto;
 
     br {
       display: none;

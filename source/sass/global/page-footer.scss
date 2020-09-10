@@ -2,7 +2,7 @@
   .page-footer {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 44px;
+    padding-top: 40px;
     padding-left: 84px;
     padding-right: 84px;
     padding-bottom: 23px;
@@ -16,7 +16,7 @@
     align-items: center;
     width: 768px;
     padding-top: 24px;
-    padding-left: 60px;
+    padding-left: 75px;
     padding-right: 60px;
     padding-bottom: 24px;
   }
@@ -34,13 +34,13 @@
 
 .page-footer__hashtag {
   @media (min-width: $mobile-width) {
-    margin: 0 auto;
-    margin-bottom: 20px;
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    margin: 0 auto;
+    margin-bottom: 16px;
     color: $base-black;
     text-transform: uppercase;
   }
@@ -52,7 +52,7 @@
 
 .page-footer__social {
   @media (min-width: $mobile-width) {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $tablet-width) {

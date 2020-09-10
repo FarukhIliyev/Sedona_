@@ -2,8 +2,8 @@
   @media (min-width: $mobile-width) {
     margin: 0;
     padding: 0;
-    padding-top: 41px;
-    padding-bottom: 2px;
+    padding-top: 35px;
+    padding-bottom:10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -57,7 +57,7 @@
 
   @media (min-width: $desktop-width) {
     width: 400px;
-    padding-top: 164px;
+    padding-top: 160px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -88,6 +88,11 @@
     font-size: 21px;
     margin-bottom: 23px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-bottom: 21px;
+  }
 }
 
 .advantages__description {
@@ -97,7 +102,7 @@
     font-weight: normal;
     font-size: 14px;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 25px;
     line-height: 21px;
     color: $light-black;
     text-transform: uppercase;
@@ -128,6 +133,10 @@
   .advantages__item--souvenirs {
     grid-column: 3 / 4;
     padding-top: 170px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 159px;
+    }
   }
 
   .advantages__item--food {

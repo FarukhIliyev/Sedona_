@@ -87,6 +87,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    padding-top: 57px;
   }
 }
 
@@ -105,18 +106,26 @@
       font-size: 21px;
     }
   }
+}
 
-  .promo__description {
+.promo__description {
+  @media (min-width: $mobile-width) {
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
-    margin-top: 35px;
+    margin-top: 31px;
     margin-bottom: 33px;
     color: $light-black;
+  }
 
-    @media (min-width: $tablet-width) {
-      margin-top: 30px;
-      margin-bottom: 52px;
-    }
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 30px;
+    margin-bottom: 42px;
   }
 }
+
