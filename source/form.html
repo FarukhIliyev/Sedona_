@@ -43,7 +43,7 @@
           <h2 class="visually-hidden">Вступительная часть формы отзыва</h2>
           <div class="intro__wrapper">
             <svg class="intro__logo" width="461px" height="350px" viewBox="0 0 459.754 350.074" role="img" aria-label="Туристический городок Седона">
-              <g class="logo__sedona">
+              <g class="intro__logo__sedona">
                 <path fill="#FFFFFF" d="M44.467,157.61c-3.572-2.979-8.139-4.963-12.902-4.963c-3.572,0-8.338,2.084-8.338,6.253 c0,4.368,5.261,6.055,8.636,7.146l4.964,1.489c10.422,3.077,18.461,8.337,18.461,20.447c0,7.445-1.787,15.088-7.742,20.15 c-5.855,4.963-13.697,7.047-21.24,7.047c-9.43,0-18.661-3.176-26.305-8.537l8.338-15.682c4.865,4.268,10.621,7.742,17.271,7.742 c4.566,0,9.43-2.283,9.43-7.545c0-5.459-7.643-7.344-11.812-8.535c-12.208-3.475-20.249-6.65-20.249-21.143 c0-15.188,10.818-25.112,25.807-25.112c7.543,0,16.775,2.382,23.426,6.154L44.467,157.61z"/>
                 <path fill="#FFFFFF" d="M91.832,154.831v12.506h21.937v16.479H91.832v12.9h23.127v16.479H72.377v-74.84h42.582v16.477H91.832z"/>
                 <path fill="#FFFFFF" d="M129.418,138.354h27.594c20.844,0,38.016,16.377,38.016,37.42c0,21.041-17.271,37.42-38.016,37.42h-27.594 V138.354z M148.873,196.718h4.367c11.612,0,21.539-6.352,21.539-20.943c0-13.4-8.834-20.943-21.341-20.943h-4.565V196.718z"/>
@@ -89,11 +89,11 @@
               <fieldset class="form-feedback__group сontact-information">
                 <legend class="form-feedback__title">Контактная информация:</legend>
                 <ul class="сontact-information__list">
-                  <li class="сontact-information__item contact__phone">
+                  <li class="сontact-information__item сontact-information сontact-information--phone">
                     <label class="сontact-information__label" for="user-number">Телефон*:</label>
                     <input class="сontact-information__input" type="text" id="user-number" name="phone-number" placeholder="Введите телефон">
                   </li>
-                  <li class="сontact-information__item contact__mail">
+                  <li class="сontact-information__item сontact-information сontact-information--mail">
                     <label class="сontact-information__label" for="user-e-mail">Электронная почта*:</label>
                     <input class="сontact-information__input" type="text" id="user-e-mail" name="e-mail" placeholder="Введите e-mail">
                   </li>
@@ -138,8 +138,8 @@
                 </ul>
               </fieldset>
               <fieldset class="form-feedback__group describe-emotions">
-                <legend class="form-feedback__title">Опишите свои эмоции:</legend>
-                <textarea class="describe-emotions__text" name="describe-emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+                <textarea class="describe-emotions__text" name="describe-emotion" id="describe-emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+                <label class="form-feedback__label" for="describe-emotion">Опишите свои эмоции:</label>
               </fieldset>
               <button class="form-feedback__button form-feedback__button-text button" type="submit">Отправить отзыв</button>
               <p class="form-feedback__text">* - обязательные поля</p>

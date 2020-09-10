@@ -44,6 +44,7 @@
   }
 }
 
+<<<<<<< HEAD
 .reason-four__title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -79,6 +80,20 @@
   @media (min-width: $mobile-width) {
     display: inline-block;
     padding: 12px;
+=======
+@media (min-width: $mobile-width) {
+  .reason-four__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  .reason-four__number {
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -86,6 +101,41 @@
     line-height: 21px;
     color: $light-black;
     text-transform: uppercase;
+  }
+
+  .reason-four__description {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-black;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .reason-four__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  .reason-four__number {
+>>>>>>> 5264aff70dc355bcee0e7bf30be3340fb9ce3a5d
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-black;
+    text-transform: uppercase;
+<<<<<<< HEAD
     margin: 0;
   }
 
@@ -93,5 +143,17 @@
     padding: 0;
     padding-left: 55px;
     padding-right: 55px;
+=======
+  }
+
+  .reason-four__description {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-black;
+    text-transform: uppercase;
+>>>>>>> 5264aff70dc355bcee0e7bf30be3340fb9ce3a5d
   }
 }

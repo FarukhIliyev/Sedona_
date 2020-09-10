@@ -498,7 +498,7 @@ template {
     margin-left: 35px; } }
 
 @media (min-width: 768px) {
-  .catalog__wrapper {
+  .photo-video__catalog {
     padding: 0 60px; }
   .catalog__info-wrapper {
     display: block;
@@ -518,15 +518,14 @@ template {
     margin: 0;
     text-transform: uppercase; }
   .catalog__number--vast {
-    position: absolute;
-    top: 31px;
-    left: 597px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
-    margin: 0; }
+    margin: 0;
+    margin-left: 355px;
+    margin-top: -4px; }
   .catalog__number {
     position: absolute;
     top: 33px;
@@ -535,7 +534,7 @@ template {
     display: none; } }
 
 @media (min-width: 1200px) {
-  .catalog__wrapper {
+  .photo-video__catalog {
     padding: 0;
     margin: 0 auto;
     max-width: 1200px; }
@@ -555,15 +554,14 @@ template {
     margin: 0;
     text-transform: uppercase; }
   .catalog__number--vast {
-    position: absolute;
-    top: 31px;
-    left: 1148px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
-    margin: 0; }
+    margin: 0;
+    margin-left: 835px;
+    margin-top: 4px; }
   .catalog__number {
     position: absolute;
     top: 27px;
@@ -1193,7 +1191,7 @@ template {
     background-color: #e6e6e6; } }
 
 @media (min-width: 320px) {
-  .contact__phone::after {
+  .сontact-information--phone::after {
     content: "";
     position: relative;
     top: -38px;
@@ -1205,7 +1203,7 @@ template {
     cursor: pointer; } }
 
 @media (min-width: 768px) {
-  .contact__phone::after {
+  .сontact-information--phone::after {
     content: "";
     position: relative;
     top: -38px;
@@ -1216,7 +1214,7 @@ template {
     cursor: pointer; } }
 
 @media (min-width: 1200px) {
-  .contact__phone::before {
+  .сontact-information--phone::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1224,7 +1222,7 @@ template {
     width: 58px;
     height: 58px;
     background-color: #e6e6e6; }
-  .contact__phone::after {
+  .сontact-information--phone::after {
     content: "";
     position: relative;
     top: 0;
@@ -1236,7 +1234,7 @@ template {
     z-index: 1; } }
 
 @media (min-width: 320px) {
-  .contact__mail::after {
+  .сontact-information--mail::after {
     content: "";
     position: relative;
     top: -38px;
@@ -1248,7 +1246,7 @@ template {
     cursor: pointer; } }
 
 @media (min-width: 768px) {
-  .contact__mail::after {
+  .сontact-information--mail::after {
     content: "";
     position: relative;
     top: -38px;
@@ -1259,7 +1257,7 @@ template {
     cursor: pointer; } }
 
 @media (min-width: 1200px) {
-  .contact__mail::before {
+  .сontact-information--mail::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1267,7 +1265,7 @@ template {
     width: 58px;
     height: 58px;
     background-color: #e6e6e6; }
-  .contact__mail::after {
+  .сontact-information--mail::after {
     content: "";
     position: relative;
     top: 0;
@@ -2000,6 +1998,7 @@ template {
     width: 400px;
     background-color: #eeeeee; } }
 
+<<<<<<< HEAD
 .reason-four__title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -2031,12 +2030,53 @@ template {
   .reason-four__description {
     display: inline-block;
     padding: 12px;
+=======
+@media (min-width: 320px) {
+  .reason-four__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    color: #000000;
+    text-transform: uppercase; }
+  .reason-four__number {
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 21px;
     color: #333333;
+    text-transform: uppercase; }
+  .reason-four__description {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: uppercase; } }
+
+@media (min-width: 768px) {
+  .reason-four__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    color: #000000;
+    text-transform: uppercase; }
+  .reason-four__number {
+>>>>>>> 5264aff70dc355bcee0e7bf30be3340fb9ce3a5d
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+<<<<<<< HEAD
     text-transform: uppercase;
     margin: 0; } }
 
@@ -2045,6 +2085,17 @@ template {
     padding: 0;
     padding-left: 55px;
     padding-right: 55px; } }
+=======
+    text-transform: uppercase; }
+  .reason-four__description {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    text-transform: uppercase; } }
+>>>>>>> 5264aff70dc355bcee0e7bf30be3340fb9ce3a5d
 
 .social__list {
   display: flex;
@@ -2254,11 +2305,11 @@ template {
     border: none;
     outline: none;
     cursor: pointer; }
-    .video__button-replay .button-replay__image {
+    .video__button-replay .video__button-replay__image {
       fill: #5c6870; }
-      .video__button-replay .button-replay__image:hover {
+      .video__button-replay .video__button-replay__image:hover {
         fill: #333333; }
-      .video__button-replay .button-replay__image:active {
+      .video__button-replay .video__button-replay__image:active {
         opacity: 0.3; }
   .video__button-subs {
     position: absolute;
@@ -2269,11 +2320,11 @@ template {
     border: none;
     outline: none;
     cursor: pointer; }
-    .video__button-subs .button-subs__image {
+    .video__button-subs .video__button-subs__image {
       fill: #5c6870; }
-      .video__button-subs .button-subs__image:hover {
+      .video__button-subs .video__button-subs__image:hover {
         fill: #333333; }
-      .video__button-subs .button-subs__image:active {
+      .video__button-subs .video__button-subs__image:active {
         opacity: 0.3; }
   .video__button-fullscreen {
     position: absolute;
@@ -2284,11 +2335,11 @@ template {
     border: none;
     outline: none;
     cursor: pointer; }
-    .video__button-fullscreen .button-fullscreen__image {
+    .video__button-fullscreen .video__button-fullscreen__image {
       fill: #5c6870; }
-      .video__button-fullscreen .button-fullscreen__image:hover {
+      .video__button-fullscreen .video__button-fullscreen__image:hover {
         fill: #333333; }
-      .video__button-fullscreen .button-fullscreen__image:active {
+      .video__button-fullscreen .video__button-fullscreen__image:active {
         opacity: 0.3; } }
 
 @media (min-width: 768px) {
@@ -2302,12 +2353,12 @@ template {
     border: none;
     outline: none;
     cursor: pointer; }
-    .video__button-replay .button-replay__image {
+    .video__button-replay .video__button-replay__image {
       fill: #ffffff; }
-      .video__button-replay .button-replay__image:hover {
+      .video__button-replay .video__button-replay__image:hover {
         fill: #ffffff;
         opacity: 0.6; }
-      .video__button-replay .button-replay__image:active {
+      .video__button-replay .video__button-replay__image:active {
         fill: #ffffff;
         opacity: 0.3; }
   .video__button-subs {
@@ -2320,12 +2371,12 @@ template {
     border: none;
     outline: none;
     cursor: pointer; }
-    .video__button-subs .button-subs__image {
+    .video__button-subs .video__button-subs__image {
       fill: #ffffff; }
-      .video__button-subs .button-subs__image:hover {
+      .video__button-subs .video__button-subs__image:hover {
         fill: #ffffff;
         opacity: 0.6; }
-      .video__button-subs .button-subs__image:active {
+      .video__button-subs .video__button-subs__image:active {
         fill: #ffffff;
         opacity: 0.3; }
   .video__button-fullscreen {
@@ -2338,12 +2389,12 @@ template {
     border: none;
     outline: none;
     cursor: pointer; }
-    .video__button-fullscreen .button-fullscreen__image {
+    .video__button-fullscreen .video__button-fullscreen__image {
       fill: #ffffff; }
-      .video__button-fullscreen .button-fullscreen__image:hover {
+      .video__button-fullscreen .video__button-fullscreen__image:hover {
         fill: #ffffff;
         opacity: 0.6; }
-      .video__button-fullscreen .button-fullscreen__image:active {
+      .video__button-fullscreen .video__button-fullscreen__image:active {
         fill: #ffffff;
         opacity: 0.3; } }
 
@@ -2358,12 +2409,12 @@ template {
     border: none;
     outline: none;
     cursor: pointer; }
-    .video__button-replay .button-replay__image {
+    .video__button-replay .video__button-replay__image {
       fill: #ffffff; }
-      .video__button-replay .button-replay__image:hover {
+      .video__button-replay .video__button-replay__image:hover {
         fill: #ffffff;
         opacity: 0.6; }
-      .video__button-replay .button-replay__image:active {
+      .video__button-replay .video__button-replay__image:active {
         fill: #ffffff;
         opacity: 0.3; }
   .video__button-subs {
@@ -2376,12 +2427,12 @@ template {
     border: none;
     outline: none;
     cursor: pointer; }
-    .video__button-subs .button-subs__image {
+    .video__button-subs .video__button-subs__image {
       fill: #ffffff; }
-      .video__button-subs .button-subs__image:hover {
+      .video__button-subs .video__button-subs__image:hover {
         fill: #ffffff;
         opacity: 0.6; }
-      .video__button-subs .button-subs__image:active {
+      .video__button-subs .video__button-subs__image:active {
         fill: #ffffff;
         opacity: 0.3; }
   .video__button-fullscreen {
@@ -2394,12 +2445,12 @@ template {
     border: none;
     outline: none;
     cursor: pointer; }
-    .video__button-fullscreen .button-fullscreen__image {
+    .video__button-fullscreen .video__button-fullscreen__image {
       fill: #ffffff; }
-      .video__button-fullscreen .button-fullscreen__image:hover {
+      .video__button-fullscreen .video__button-fullscreen__image:hover {
         fill: #ffffff;
         opacity: 0.6; }
-      .video__button-fullscreen .button-fullscreen__image:active {
+      .video__button-fullscreen .video__button-fullscreen__image:active {
         fill: #ffffff;
         opacity: 0.3; } }
 
