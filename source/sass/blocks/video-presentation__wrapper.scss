@@ -1,57 +1,89 @@
-.video__info {
-  text-align: center;
-  padding-left: 43px;
-  padding-right: 32px;
-}
+@media (min-width: $mobile-width) {
+  .video__presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 33px;
+  }
 
-.video__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  color: $base-black;
-  text-transform: uppercase;
-}
+  .video__info {
+    text-align: center;
+    padding-left: 43px;
+    padding-right: 32px;
+  }
 
-.video__text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $light-black;
-  text-transform: uppercase;
+  .video__wrapper {
+    border-top: 1px solid $base-gray;
+  }
+
+  .video__content {
+    width: 320px;
+    height: 201px;
+    margin-bottom: -45px;
+  }
+
+  .video__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    margin-top: 29px;
+    margin-right: 9px;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  .video__text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 28px;
+    margin-right: 9px;
+    color: $light-black;
+    text-transform: uppercase;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .video__wrapper {
+    border: none;
+  }
+
+  .video__presentation {
+    margin-top: 79px;
+  }
+
   .video__info {
     padding-left: 102px;
     padding-right: 102px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .video__info {
-    padding-left: 177px;
-    padding-right: 177px;
-  }
-}
-
-.video__content {
-  width: 320px;
-  height: 201px;
-  margin-bottom: -45px;
-  background-image: url("../img/slice-clip-mobile.jpg");
-  background-repeat: no-repeat;
-}
-
-@media (min-width: $tablet-width) {
   .video__content {
     width: 648px;
     height: 500px;
     margin-bottom: -93px;
-    background-image: url("../img/slice-clip-tablet.jpg");
+  }
+
+  .video__clip {
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 58px;
+  }
+
+  .video__text {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 33px;
   }
 }
 
@@ -60,17 +92,28 @@
     padding: 0 199px;
   }
 
+  .video__presentation {
+    padding-right: 2px;
+  }
+
+  .video__info {
+    padding-left: 177px;
+    padding-right: 177px;
+  }
+
   .video__content {
     width: 800px;
     height: 500px;
-    background-image: url("../img/slice-clip-desktop.jpg");
   }
-}
 
-.video__presentation {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+  .video__clip {
+    width: 800px;
+    height: 500px;
+  }
+
+  .video__title {
+    margin-top: 75px;
+  }
 }
 
 .video__controls-panel {
@@ -113,10 +156,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 17px;
+      top: 19px;
       left: 58px;
-      width: 13px;
-      height: 13px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
       background-color: #ffffff;
       cursor: pointer;
@@ -137,10 +180,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 40px;
+      top: 42px;
       left: 206px;
-      width: 13px;
-      height: 13px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
       background-color: #ffffff;
       cursor: pointer;
@@ -161,10 +204,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 40px;
+      top: 41px;
       left: 206px;
-      width: 13px;
-      height: 13px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
       background-color: #ffffff;
       cursor: pointer;
@@ -202,64 +245,69 @@
   .video__button-replay {
     position: absolute;
     top: 22px;
-    left: 25px;
+    left: 19px;
     width: 20px;
     height: 20px;
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 20px;
-      mask-image: url("../img/icon-video-replay.svg");
-      background-color: $special-gray;
-      background-repeat: no-repeat;
-      cursor: pointer;
+    .video__button-replay__image {
+      fill: $special-gray;
+
+      &:hover {
+        fill: $light-black;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 
   .video__button-subs {
     position: absolute;
     top: 22px;
-    left: 174px;
+    left: 168px;
     width: 32px;
     height: 20px;
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 32px;
-      height: 20px;
-      mask-image: url("../img/icon-video-subtitles.svg");
-      background-color: $special-gray;
-      cursor: pointer;
+    .video__button-subs__image {
+      fill: $special-gray;
+
+      &:hover {
+        fill: $light-black;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 
   .video__button-fullscreen {
     position: absolute;
     top: 22px;
-    left: 237px;
+    left: 231px;
     width: 20px;
     height: 20px;
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      mask-image: url("../img/icon-video-fullscreen.svg");
-      background-color: $special-gray;
-      cursor: pointer;
+    .video__button-fullscreen__image {
+      fill: $special-gray;
+
+      &:hover {
+        fill: $light-black;
+      }
+
+      &:active {
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -268,68 +316,78 @@
   .video__button-replay {
     position: absolute;
     top: 35px;
-    left: 35px;
+    left: 29px;
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 20px;
-      mask-image: url("../img/icon-video-replay.svg");
-      background-color: $base-white;
-      background-repeat: no-repeat;
-      cursor: pointer;
+    .video__button-replay__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 
   .video__button-subs {
     position: absolute;
     top: 36px;
-    left: 524px;
+    left: 518px;
     width: 32px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 32px;
-      height: 20px;
-      mask-image: url("../img/icon-video-subtitles.svg");
-      background-color: $base-white;
-      cursor: pointer;
+    .video__button-subs__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 
   .video__button-fullscreen {
     position: absolute;
     top: 36px;
-    left: 587px;
+    left: 581px;
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
     cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      mask-image: url("../img/icon-video-fullscreen.svg");
-      background-color: $base-white;
-      cursor: pointer;
+    .video__button-fullscreen__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 }
@@ -337,69 +395,79 @@
 @media (min-width: $desktop-width) {
   .video__button-replay {
     position: absolute;
-    top: 35px;
-    left: 35px;
+    top: 33px;
+    left: 29px;
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 16px;
-      height: 20px;
-      mask-image: url("../img/icon-video-replay.svg");
-      background-color: $base-white;
-      background-repeat: no-repeat;
-      cursor: pointer;
+    .video__button-replay__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 
   .video__button-subs {
     position: absolute;
-    top: 36px;
-    left: 675px;
+    top: 34px;
+    left: 669px;
     width: 32px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
+    cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 32px;
-      height: 20px;
-      mask-image: url("../img/icon-video-subtitles.svg");
-      background-color: $base-white;
-      cursor: pointer;
+    .video__button-subs__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 
   .video__button-fullscreen {
     position: absolute;
-    top: 36px;
-    left: 738px;
+    top: 34px;
+    left: 732px;
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: none;
+    outline: none;
     cursor: pointer;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 20px;
-      height: 20px;
-      mask-image: url("../img/icon-video-fullscreen.svg");
-      background-color: $base-white;
-      cursor: pointer;
+    .video__button-fullscreen__image {
+      fill: $base-white;
+
+      &:hover {
+        fill: $base-white;
+        opacity: 0.6;
+      }
+
+      &:active {
+        fill: $base-white;
+        opacity: 0.3;
+      }
     }
   }
 }

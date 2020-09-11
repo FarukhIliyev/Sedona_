@@ -1,75 +1,88 @@
-.photo-video {
-  width: 320px;
-  text-align: start;
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1200px;
-  }
-}
-
-.photo-video__info {
-  text-align: center;
-}
-
-.photo-video__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  color: $base-black;
-  text-transform: uppercase;
-}
-
-.photo-video__text {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $light-black;
-  text-transform: uppercase;
-}
-
-@media (min-width: $tablet-width) {
+@media (min-width: $mobile-width) {
   .photo-video {
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .photo-video {
-    width: 1200px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .photo-video__info {
-    width: 768px;
-    height: 248px;
+    width: 320px;
     text-align: center;
+    margin-top: 32px;
+  }
+
+  .photo-video__info {
+    text-align: center;
+    margin-top: 28px;
+    margin-left: 4px;
+  }
+
+  .photo-video__title {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 4px;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  .photo-video__text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    line-height: 24px;
+    color: $light-black;
+    text-transform: uppercase;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-video {
+    width: 768px;
+  }
+
+  .photo-video__info {
+    width: 768px;
+    text-align: center;
+    margin: 0;
+    margin-top: 34px;
   }
 
   .photo-video__title {
     font-size: 30px;
     margin: 0;
-    padding-top: 66px;
+    margin-top: 64px;
+  }
+
+  .photo-video__text {
+    margin-bottom: 76px;
+
+    br {
+      display: block;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .photo-video {
+    width: 1200px;
+  }
+
   .photo-video__info {
     width: 1200px;
-    height: 285px;
   }
 
   .photo-video__title {
     font-size: 30px;
     margin: 0;
-    padding-top: 102px;
+    padding-top: 54px;
+  }
+
+  .photo-video__text {
+    margin-bottom: 79px;
   }
 }

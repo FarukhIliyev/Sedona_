@@ -1,0 +1,45 @@
+.promo__logo {
+  @media (min-width: $mobile-width) {
+    width: 282px;
+    height: 214px;
+    margin-top: 90px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 461px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 78px;
+  }
+}
+
+.intro__logo {
+  @media (min-width: $mobile-width) {
+    width: 257px;
+    height: 174px;
+    margin: 0 auto;
+    margin-top: -17px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 459px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 78px;
+  }
+}
+
+.intro__logo__sedona {
+  @media (min-width: $tablet-width) {
+    width: 459px;
+    height: auto;
+  }
+}
