@@ -20,20 +20,26 @@
 
 .intro__logo {
   @media (min-width: $mobile-width) {
-    width: 257px;
-    height: 174px;
-    margin: 0 auto;
-    margin-top: -17px;
+    position: absolute;
+    left: 277px;
+    top: -106px;
+    width: 230px;
+    margin-left: -230px;
   }
 
   @media (min-width: $tablet-width) {
-    display: block;
     width: 459px;
     height: auto;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 78px;
+    position: absolute;
+    left: 50%;
+    top: -110px;
+    width: 460px;
+    height: auto;
+    margin-left: -230px;
   }
 }
 

@@ -23,15 +23,17 @@
 }
 
 .form-feedback__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0 auto;
-  padding-top: 26px;
-  color: $base-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 auto;
+    padding-top: 22px;
+    color: $base-black;
+    text-transform: uppercase;
+  }
 }
 
 .introduce-yourself__item,
@@ -76,9 +78,9 @@
   width: 279px;
   height: 160px;
   resize: none;
-  margin-top: 22px;
+  margin-top: 17px;
   margin-bottom: 26px;
-  padding-top: 19px;
+  padding-top: 12px;
   padding-left: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -107,8 +109,8 @@
     line-height: 26px;
     width: 280px;
     height: 58px;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: 21px;
+    margin-bottom: -2px;
     background-color: $base-blue;
     color: $base-white;
     text-decoration: none;
@@ -165,6 +167,17 @@
     padding-top: 35px;
     padding-left: 326px;
   }
+}
+
+.form-feedback__label {
+  display: block;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 22px;
+  text-transform: uppercase;
 }
 
 .form-feedback__leave-feedback {
@@ -299,7 +312,8 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .сontact-information__input {
@@ -325,8 +339,9 @@
   }
 
   .сontact-information__label {
+    margin-left: 20px;
     margin-right: 22px;
-    margin-bottom: 17px;
+    margin-bottom: 5px;
   }
 }
 
@@ -387,7 +402,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 63px;
+      top: 31px;
       left: 242px;
       width: 58px;
       height: 58px;
@@ -723,7 +738,7 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 28px 20px 20px 90px;
+    padding: 28px 20px 20px 100px;
   }
 
   @media (min-width: $tablet-width) {

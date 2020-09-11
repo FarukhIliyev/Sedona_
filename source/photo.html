@@ -42,7 +42,12 @@
         <section class="intro">
           <h2 class="visually-hidden">Вступительная часть фото-видео галереи</h2>
           <div class="intro__wrapper">
-            <svg class="intro__logo" width="461px" height="350px" viewBox="0 0 459.754 350.074" role="img" aria-label="Туристический городок Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img class="intro__logo__triangle-white" src="img/bg-intro-triangle-mobile.svg" width="320" height="263" alt="Белый треугольник">
+            </picture>
+            <svg class="intro__logo" width="461" height="350" viewBox="0 0 459.754 350.074" role="img" aria-label="Туристический городок Седона">
               <g class="intro__logo__sedona">
                 <path fill="#FFFFFF" d="M44.467,157.61c-3.572-2.979-8.139-4.963-12.902-4.963c-3.572,0-8.338,2.084-8.338,6.253 c0,4.368,5.261,6.055,8.636,7.146l4.964,1.489c10.422,3.077,18.461,8.337,18.461,20.447c0,7.445-1.787,15.088-7.742,20.15 c-5.855,4.963-13.697,7.047-21.24,7.047c-9.43,0-18.661-3.176-26.305-8.537l8.338-15.682c4.865,4.268,10.621,7.742,17.271,7.742 c4.566,0,9.43-2.283,9.43-7.545c0-5.459-7.643-7.344-11.812-8.535c-12.208-3.475-20.249-6.65-20.249-21.143 c0-15.188,10.818-25.112,25.807-25.112c7.543,0,16.775,2.382,23.426,6.154L44.467,157.61z"/>
                 <path fill="#FFFFFF" d="M91.832,154.831v12.506h21.937v16.479H91.832v12.9h23.127v16.479H72.377v-74.84h42.582v16.477H91.832z"/>
@@ -52,11 +57,6 @@
                 <path fill="#FFFFFF" d="M407.346,200.192l-5.16,13.002H381.54l28.785-74.84h21.242l28.188,74.84H439.01l-4.863-13.002H407.346z M420.946,161.481h-0.199l-8.039,23.823h16.178L420.946,161.481z"/>
               </g>
             </svg>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
-              <img class="intro__logo__triangle-white" src="img/bg-intro-triangle-mobile.svg" width="320" height="263" alt="Белый треугольник">
-            </picture>
           </div>
         </section>
         <section class="photo-video">

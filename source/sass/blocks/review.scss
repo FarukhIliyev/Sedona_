@@ -5,6 +5,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    margin-top: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,9 +27,13 @@
 }
 
 .review__text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 30px;
+  }
 }
