@@ -2,11 +2,13 @@
   .photo-video {
     width: 320px;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 32px;
   }
 
   .photo-video__info {
     text-align: center;
+    margin-top: 28px;
+    margin-left: 4px;
   }
 
   .photo-video__title {
@@ -15,6 +17,7 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
+    margin-left: 4px;
     color: $base-black;
     text-transform: uppercase;
   }
@@ -26,10 +29,14 @@
     font-size: 14px;
     margin: 0;
     margin-top: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     line-height: 24px;
     color: $light-black;
     text-transform: uppercase;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -41,11 +48,22 @@
   .photo-video__info {
     width: 768px;
     text-align: center;
+    margin: 0;
+    margin-top: 34px;
   }
 
   .photo-video__title {
     font-size: 30px;
-    padding-top: 66px;
+    margin: 0;
+    margin-top: 64px;
+  }
+
+  .photo-video__text {
+    margin-bottom: 76px;
+
+    br {
+      display: block;
+    }
   }
 }
 
@@ -60,6 +78,11 @@
 
   .photo-video__title {
     font-size: 30px;
-    padding-top: 102px;
+    margin: 0;
+    padding-top: 54px;
+  }
+
+  .photo-video__text {
+    margin-bottom: 79px;
   }
 }

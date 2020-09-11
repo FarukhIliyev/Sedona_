@@ -3,6 +3,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin-top: 33px;
   }
 
   .video__info {
@@ -27,6 +28,9 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 26px;
+    margin: 0;
+    margin-top: 29px;
+    margin-right: 9px;
     color: $base-black;
     text-transform: uppercase;
   }
@@ -37,6 +41,9 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
+    margin: 0;
+    margin-top: 28px;
+    margin-right: 9px;
     color: $light-black;
     text-transform: uppercase;
   }
@@ -45,6 +52,10 @@
 @media (min-width: $tablet-width) {
   .video__wrapper {
     border: none;
+  }
+
+  .video__presentation {
+    margin-top: 79px;
   }
 
   .video__info {
@@ -62,11 +73,27 @@
     width: 800px;
     height: 500px;
   }
+
+  .video__title {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 58px;
+  }
+
+  .video__text {
+    font-size: 14px;
+    margin: 0;
+    margin-top: 33px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .video__wrapper {
     padding: 0 199px;
+  }
+
+  .video__presentation {
+    padding-right: 2px;
   }
 
   .video__info {
@@ -82,6 +109,10 @@
   .video__clip {
     width: 800px;
     height: 500px;
+  }
+
+  .video__title {
+    margin-top: 75px;
   }
 }
 
@@ -125,10 +156,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 17px;
+      top: 19px;
       left: 58px;
-      width: 13px;
-      height: 13px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
       background-color: #ffffff;
       cursor: pointer;
@@ -149,10 +180,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 40px;
+      top: 42px;
       left: 206px;
-      width: 13px;
-      height: 13px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
       background-color: #ffffff;
       cursor: pointer;
@@ -173,10 +204,10 @@
     &::after {
       content: "";
       position: absolute;
-      top: 40px;
+      top: 41px;
       left: 206px;
-      width: 13px;
-      height: 13px;
+      width: 9px;
+      height: 9px;
       border-radius: 50%;
       background-color: #ffffff;
       cursor: pointer;
@@ -214,7 +245,7 @@
   .video__button-replay {
     position: absolute;
     top: 22px;
-    left: 25px;
+    left: 19px;
     width: 20px;
     height: 20px;
     border: none;
@@ -237,7 +268,7 @@
   .video__button-subs {
     position: absolute;
     top: 22px;
-    left: 174px;
+    left: 168px;
     width: 32px;
     height: 20px;
     border: none;
@@ -260,7 +291,7 @@
   .video__button-fullscreen {
     position: absolute;
     top: 22px;
-    left: 237px;
+    left: 231px;
     width: 20px;
     height: 20px;
     border: none;
@@ -285,7 +316,7 @@
   .video__button-replay {
     position: absolute;
     top: 35px;
-    left: 35px;
+    left: 29px;
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -311,7 +342,7 @@
   .video__button-subs {
     position: absolute;
     top: 36px;
-    left: 524px;
+    left: 518px;
     width: 32px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -337,7 +368,7 @@
   .video__button-fullscreen {
     position: absolute;
     top: 36px;
-    left: 587px;
+    left: 581px;
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -364,8 +395,8 @@
 @media (min-width: $desktop-width) {
   .video__button-replay {
     position: absolute;
-    top: 35px;
-    left: 35px;
+    top: 33px;
+    left: 29px;
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -390,8 +421,8 @@
 
   .video__button-subs {
     position: absolute;
-    top: 36px;
-    left: 675px;
+    top: 34px;
+    left: 669px;
     width: 32px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);
@@ -416,8 +447,8 @@
 
   .video__button-fullscreen {
     position: absolute;
-    top: 36px;
-    left: 738px;
+    top: 34px;
+    left: 732px;
     width: 20px;
     height: 20px;
     background-color: rgba(0, 0, 0, 0);

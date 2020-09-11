@@ -19,15 +19,27 @@
 }
 
 .intro__logo {
-  width: 257px;
-  height: 174px;
-  margin-top: -17px;
+  @media (min-width: $mobile-width) {
+    width: 257px;
+    height: 174px;
+    margin: 0 auto;
+    margin-top: -17px;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
+    width: 459px;
+    height: auto;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 78px;
+  }
+}
+
+.intro__logo__sedona {
+  @media (min-width: $tablet-width) {
+    width: 459px;
+    height: auto;
   }
 }
