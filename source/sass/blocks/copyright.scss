@@ -8,3 +8,16 @@
   color: $light-black;
   text-transform: uppercase;
 }
+
+.copyright__image {
+  fill: $base-black;
+
+  &:hover {
+    fill: $base-blue;
+  }
+
+  &:active {
+    fill: $base-black;
+    opacity: 0.3;
+  }
+}
