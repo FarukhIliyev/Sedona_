@@ -673,18 +673,18 @@ template {
     background-color: rgba(0, 0, 0, 0);
     border: none;
 
-&::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 23px;
-   height: 21px;
-   mask-image: url("../img/icon-like.svg");
-   background-repeat: no-repeat;
-   background-color: $special-gray;
- }
-}
+    &::before {
+       content: "";
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 23px;
+       height: 21px;
+       mask-image: url("../img/icon-like.svg");
+       background-repeat: no-repeat;
+       background-color: $special-gray;
+     }
+  }
 }
 
 .copyright__text {
