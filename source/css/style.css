@@ -1460,7 +1460,7 @@ template {
     content: "";
     position: absolute;
     top: 16px;
-    left: 0;
+    left: 0px;
     width: 56px;
     height: 56px;
     border-radius: 50%;
