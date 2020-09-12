@@ -122,6 +122,9 @@
     br {
       display: none;
     }
+
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -136,6 +139,8 @@
 
     @media (min-width: $desktop-width) {
       padding-top: 159px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
   }
 

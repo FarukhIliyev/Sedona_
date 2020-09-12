@@ -10,7 +10,7 @@
     <div class="page-body__wrapper">
       <header class="page-header container">
         <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -85,12 +85,12 @@
                 <h3 class="form-feedback__title">Контактная информация:</h3>
                 <ul class="сontact-information__list">
                   <li class="сontact-information__item сontact-information сontact-information--phone">
-                    <label class="сontact-information__label" for="user-number">Контактный телефон*:</label>
-                    <input class="сontact-information__input" type="text" id="user-number" name="phone-number" placeholder="Введите телефон">
+                    <label class="сontact-information__label" for="user-number"><span>Контактный</span> телефон*:</label>
+                    <input class="сontact-information__input" type="text" id="user-number" name="phone-number" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-0-9]{3}-[0-9]{2}-[0-9]{2}" required>
                   </li>
                   <li class="сontact-information__item сontact-information сontact-information--mail">
                     <label class="сontact-information__label" for="user-e-mail">Электронная почта*:</label>
-                    <input class="сontact-information__input" type="text" id="user-e-mail" name="e-mail" placeholder="Введите e-mail">
+                    <input class="сontact-information__input" type="text" id="user-e-mail" name="e-mail" placeholder="Введите e-mail" pattern="[A-Za-z]" required>
                   </li>
                 </ul>
               </fieldset>
