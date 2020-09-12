@@ -2,8 +2,8 @@
   @media (min-width: $mobile-width) {
     margin: 0;
     padding: 0;
-    padding-top: 41px;
-    padding-bottom: 2px;
+    padding-top: 35px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -42,7 +42,7 @@
   @media (min-width: $tablet-width) {
     width: 256px;
     text-align: center;
-    padding-top: 164px;
+    padding-top: 159px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -57,7 +57,7 @@
 
   @media (min-width: $desktop-width) {
     width: 400px;
-    padding-top: 164px;
+    padding-top: 160px;
     padding-left: 20px;
     padding-right: 20px;
 
@@ -72,15 +72,27 @@
 }
 
 .advantages__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  margin: 0;
-  margin-bottom: 20px;
-  line-height: 26px;
-  color: $base-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 26px;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-bottom: 21px;
+  }
 }
 
 .advantages__description {
@@ -90,7 +102,7 @@
     font-weight: normal;
     font-size: 14px;
     margin: 0;
-    margin-bottom: 38px;
+    margin-bottom: 25px;
     line-height: 21px;
     color: $light-black;
     text-transform: uppercase;
@@ -110,6 +122,9 @@
     br {
       display: none;
     }
+
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -120,6 +135,13 @@
 
   .advantages__item--souvenirs {
     grid-column: 3 / 4;
+    padding-top: 170px;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 159px;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
 
   .advantages__item--food {

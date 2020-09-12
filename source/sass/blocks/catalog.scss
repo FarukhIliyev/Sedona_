@@ -12,6 +12,10 @@
     border-top: 1px solid $base-gray;
   }
 
+  .catalog__info-wrapper {
+    text-align: start;
+  }
+
   .catalog__title {
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
@@ -19,7 +23,7 @@
     font-size: 14px;
     line-height: 24px;
     margin: 0;
-    margin-top: 17px;
+    margin-top: 11px;
     text-transform: uppercase;
   }
 
@@ -30,7 +34,7 @@
     font-size: 14px;
     line-height: 24px;
     margin: 0;
-    margin-bottom: 13px;
+    margin-bottom: 10px;
   }
 
   .catalog__number--vast {
@@ -55,7 +59,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog__wrapper {
+  .photo-video__catalog {
     padding: 0 60px;
   }
 
@@ -85,21 +89,20 @@
   }
 
   .catalog__number--vast {
-    position: absolute;
-    top: 31px;
-    left: 597px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
     margin: 0;
+    margin-left: 355px;
+    margin-top: -4px;
   }
 
   .catalog__number {
     position: absolute;
-    top: 33px;
-    left: 243px;
+    top: 30px;
+    left: 236px;
   }
 
   .catalog__photo {
@@ -108,7 +111,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .catalog__wrapper {
+  .photo-video__catalog {
     padding: 0;
     margin: 0 auto;
     max-width: 1200px;
@@ -128,31 +131,25 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   }
 
-  .catalog__item {
-    border: 1px solid $base-black;
-  }
-
   .catalog__title {
     margin: 0;
     text-transform: uppercase;
   }
 
   .catalog__number--vast {
-    position: absolute;
-    top: 31px;
-    left: 1148px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
     line-height: 24px;
     margin: 0;
+    margin-left: 835px;
   }
 
   .catalog__number {
     position: absolute;
-    top: 27px;
-    left: 314px;
+    top: 30px;
+    left: 312px;
   }
 
   .catalog__photo {
@@ -272,14 +269,14 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 31px;
-    left: 239px;
+    top: 28px;
+    left: 233px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 26px;
-    left: 310px;
+    top: 28px;
+    left: 309px;
     fill: $base-white;
     opacity: 1;
   }

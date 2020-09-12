@@ -10,6 +10,8 @@
     display: flex;
     justify-content: flex-start;
     width: 768px;
+    height: 57px;
+    z-index: 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +24,7 @@
 .page-header__logo {
   @media (min-width: $mobile-width) {
     position: absolute;
-    top: 208px;
+    top: 220px;
     left: 110px;
     width: 102px;
     height: 85px;
@@ -32,7 +34,7 @@
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
-    left: 340px;
+    left: 332px;
     width: 102px;
     height: 85px;
     z-index: 2;

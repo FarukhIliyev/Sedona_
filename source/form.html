@@ -10,11 +10,11 @@
     <div class="page-body__wrapper">
       <header class="page-header container">
         <nav class="main-nav main-nav--opened main-nav--closed main-nav--nojs">
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" aria-label="Логотип Седона">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
             </picture>
           </a>
           <button class="main-nav__toggle" type="button" aria-label="Закрыть"></button>
@@ -38,10 +38,12 @@
         </nav>
       </header>
       <main class="page-main container">
+        <h1 class="visually-hidden">Форма отзыва</h1>
         <section class="intro">
+          <h2 class="visually-hidden">Вступительная часть формы отзыва</h2>
           <div class="intro__wrapper">
-            <svg class="intro__logo" width="461px" height="350px" viewBox="0 0 459.754 350.074" role="img" aria-label="Туристический городок Седона">
-              <g class="logo__sedona">
+            <svg class="intro__logo" width="460" height="350" viewBox="0 0 459.754 350.074" role="img" aria-label="Туристический городок Седона">
+              <g class="intro__logo__sedona">
                 <path fill="#FFFFFF" d="M44.467,157.61c-3.572-2.979-8.139-4.963-12.902-4.963c-3.572,0-8.338,2.084-8.338,6.253 c0,4.368,5.261,6.055,8.636,7.146l4.964,1.489c10.422,3.077,18.461,8.337,18.461,20.447c0,7.445-1.787,15.088-7.742,20.15 c-5.855,4.963-13.697,7.047-21.24,7.047c-9.43,0-18.661-3.176-26.305-8.537l8.338-15.682c4.865,4.268,10.621,7.742,17.271,7.742 c4.566,0,9.43-2.283,9.43-7.545c0-5.459-7.643-7.344-11.812-8.535c-12.208-3.475-20.249-6.65-20.249-21.143 c0-15.188,10.818-25.112,25.807-25.112c7.543,0,16.775,2.382,23.426,6.154L44.467,157.61z"/>
                 <path fill="#FFFFFF" d="M91.832,154.831v12.506h21.937v16.479H91.832v12.9h23.127v16.479H72.377v-74.84h42.582v16.477H91.832z"/>
                 <path fill="#FFFFFF" d="M129.418,138.354h27.594c20.844,0,38.016,16.377,38.016,37.42c0,21.041-17.271,37.42-38.016,37.42h-27.594 V138.354z M148.873,196.718h4.367c11.612,0,21.539-6.352,21.539-20.943c0-13.4-8.834-20.943-21.341-20.943h-4.565V196.718z"/>
@@ -50,16 +52,11 @@
                 <path fill="#FFFFFF" d="M407.346,200.192l-5.16,13.002H381.54l28.785-74.84h21.242l28.188,74.84H439.01l-4.863-13.002H407.346z M420.946,161.481h-0.199l-8.039,23.823h16.178L420.946,161.481z"/>
               </g>
             </svg>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
-              <img class="intro__logo__triangle-white" srcset="img/bg-intro-triangle-mobile.svg" width="320" height="263" alt="Белый треугольник">
-            </picture>
           </div>
           <section class="review">
-            <h1 class="review__title">Оставьте свой отзыв</h1>
+            <h2 class="review__title">Оставьте свой отзыв</h2>
             <p class="review__text">
-              Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о <br>посещенных вами достопримечательностях
+              Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях
             </p>
           </section>
         </section>
@@ -68,7 +65,7 @@
             <h2 class="visually-hidden">Обратная связь</h2>
             <form class="form-feedback__leave-feedback" action="https://echo.htmlacademy.ru" method="post">
               <fieldset class="form-feedback__group introduce-yourself">
-                <legend class="form-feedback__title">Представьтесь:</legend>
+                <h3 class="form-feedback__title">Представьтесь:</h3>
                 <ul class="introduce-yourself__list">
                   <li class="introduce-yourself__item">
                     <label class="introduce-yourself__label" for="user-name">Имя*:</label>
@@ -85,20 +82,20 @@
                 </ul>
               </fieldset>
               <fieldset class="form-feedback__group сontact-information">
-                <legend class="form-feedback__title">Контактная информация:</legend>
+                <h3 class="form-feedback__title">Контактная информация:</h3>
                 <ul class="сontact-information__list">
-                  <li class="сontact-information__item contact__phone">
-                    <label class="сontact-information__label" for="user-number">Телефон*:</label>
-                    <input class="сontact-information__input" type="text" id="user-number" name="phone-number" placeholder="Введите телефон">
+                  <li class="сontact-information__item сontact-information сontact-information--phone">
+                    <label class="сontact-information__label" for="user-number"><span>Контактный</span> телефон*:</label>
+                    <input class="сontact-information__input" type="text" id="user-number" name="phone-number" placeholder="Введите телефон" pattern="[0-9]{1}-[0-9]{3}-0-9]{3}-[0-9]{2}-[0-9]{2}" required>
                   </li>
-                  <li class="сontact-information__item contact__mail">
+                  <li class="сontact-information__item сontact-information сontact-information--mail">
                     <label class="сontact-information__label" for="user-e-mail">Электронная почта*:</label>
-                    <input class="сontact-information__input" type="text" id="user-e-mail" name="e-mail" placeholder="Введите e-mail">
+                    <input class="сontact-information__input" type="text" id="user-e-mail" name="e-mail" placeholder="Введите e-mail" pattern="[A-Za-z]" required>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="form-feedback__group impression">
-                <legend class="form-feedback__title">Ваше общее впечатление:</legend>
+                <h3 class="form-feedback__title">Ваше общее впечатление:</h3>
                 <ul class="impression__list">
                   <li class="impression__item">
                     <input class="impression__input" type="radio" id="rather-positive" name="impression" value="positive" checked>
@@ -115,7 +112,7 @@
                 </ul>
               </fieldset>
               <fieldset class="form-feedback__group special-places">
-                <legend class="form-feedback__title">Посещенные<br>достопримечательности:</legend>
+                <h3 class="form-feedback__title">Посещенные<br>достопримечательности:</h3>
                 <ul class="special-places__list">
                   <li class="special-places__item">
                     <input class="special-places__input" type="checkbox" id="devil's-bridge"  name="special-places" checked>
@@ -136,8 +133,8 @@
                 </ul>
               </fieldset>
               <fieldset class="form-feedback__group describe-emotions">
-                <legend class="form-feedback__title">Опишите свои эмоции:</legend>
-                <textarea class="describe-emotions__text" name="describe-emotion" placeholder="Опишите подробно все свои восторги"></textarea>
+                <label class="form-feedback__label" for="describe-emotion">Опишите свои эмоции:</label>
+                <textarea class="describe-emotions__text" name="describe-emotion" id="describe-emotion" placeholder="Опишите подробно все свои восторги"></textarea>
               </fieldset>
               <button class="form-feedback__button form-feedback__button-text button" type="submit">Отправить отзыв</button>
               <p class="form-feedback__text">* - обязательные поля</p>

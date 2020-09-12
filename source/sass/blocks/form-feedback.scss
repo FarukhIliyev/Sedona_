@@ -12,6 +12,7 @@
 }
 
 .form-feedback__group {
+  position: relative;
   border: none;
   margin: 0;
   padding: 0;
@@ -23,15 +24,21 @@
 }
 
 .form-feedback__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0 auto;
-  padding-top: 26px;
-  color: $base-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    margin-top: 22px;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .introduce-yourself__item,
@@ -76,9 +83,9 @@
   width: 279px;
   height: 160px;
   resize: none;
-  margin-top: 22px;
+  margin-top: 17px;
   margin-bottom: 26px;
-  padding-top: 19px;
+  padding-top: 12px;
   padding-left: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -91,6 +98,9 @@
 
   @media (min-width: $tablet-width) {
     width: 648px;
+    margin-top: 56px;
+    padding-top: 16px;
+    padding-left: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -107,8 +117,8 @@
     line-height: 26px;
     width: 280px;
     height: 58px;
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: 21px;
+    margin-bottom: -2px;
     background-color: $base-blue;
     color: $base-white;
     text-decoration: none;
@@ -121,11 +131,15 @@
   @media (min-width: $tablet-width) {
     width: 324px;
     height: 58px;
+    margin-top: 27px;
+    padding-top: 8px;
   }
 
   @media (min-width: $desktop-width) {
     width: 480px;
     height: 58px;
+    padding: 0;
+    padding-top: 10px;
   }
 
   &:hover {
@@ -150,8 +164,8 @@
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
-    padding-top: 35px;
-    padding-left: 164px;
+    padding-top: 32px;
+    padding-left: 171px;
   }
 
   @media (min-width: $desktop-width) {
@@ -164,6 +178,63 @@
     text-transform: uppercase;
     padding-top: 35px;
     padding-left: 326px;
+  }
+}
+
+.form-feedback__label {
+  display: block;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 11px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 0;
+    width: 123px;
+    height: 2px;
+    background-color: $base-gray;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 525px;
+    width: 123px;
+    height: 2px;
+    background-color: $base-gray;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 0;
+      width: 280px;
+      height: 2px;
+      background-color: $base-gray;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 680px;
+      width: 280px;
+      height: 2px;
+      background-color: $base-gray;
+    }
   }
 }
 
@@ -188,6 +259,7 @@
 
   .сontact-information {
     grid-row: 2 / 3;
+    margin-top: 46px;
   }
 
   .impression {
@@ -256,7 +328,6 @@
 @media (min-width: $tablet-width) {
   .introduce-yourself__list {
     width: 324px;
-    height: 335px;
     margin: 0;
     padding: 0;
 
@@ -290,43 +361,47 @@
 
 @media (min-width: $mobile-width) {
   .сontact-information__list {
-    margin: 0;
     padding: 0;
-    padding-bottom: 26px;
   }
 
   .сontact-information__item {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .сontact-information__input {
-    width: 100%;
-    padding-top: 16px;
-    padding-left: 23px;
-    padding-bottom: 17px;
-    background-color: $light-gray;
-    border: none;
-    outline: none;
+    @media (min-width: $mobile-width) {
+      width: 280px;
+      height: 58px;
+      padding-top: 16px;
+      padding-left: 23px;
+      padding-bottom: 17px;
+      background-color: $light-gray;
+      border: none;
+      outline: none;
 
-    &:hover {
-      background-color: $special-navy-gray;
-    }
+      &:hover {
+        background-color: $special-navy-gray;
+      }
 
-    &:active {
-      padding-top: 12px;
-      padding-left: 19px;
-      padding-bottom: 12px;
-      background-color: $base-white;
-      border: 4px solid $special-navy-gray;
+      &:active {
+        padding-top: 12px;
+        padding-left: 19px;
+        padding-bottom: 12px;
+        background-color: $base-white;
+        outline: 5px solid $special-navy-gray;
+        outline-offset: -5px;
+      }
     }
   }
 
   .сontact-information__label {
+    margin-left: 23px;
     margin-right: 22px;
-    margin-bottom: 17px;
+    margin-bottom: 5px;
   }
 }
 
@@ -334,6 +409,7 @@
   .сontact-information__list {
     width: 648px;
     margin: 0;
+    margin-top: 23px;
     padding: 0;
     padding-bottom: 26px;
 
@@ -347,11 +423,12 @@
 
   .сontact-information__item {
     display: flex;
-    margin-top: 32px;
+    align-items: center;
+    margin-top: 2px;
     padding: 0;
 
     @media (min-width: $desktop-width) {
-      align-items: center;
+      display: flex;
       margin-top: 47px;
       /*outline: 5px solid rgba(0, 255, 0, 0.8);
       outline-offset: -5px;*/
@@ -374,10 +451,14 @@
 
   .сontact-information__label {
     margin-left: 22px;
-    margin-bottom: 17px;
+    margin-bottom: 6px;
 
     @media (min-width: $desktop-width) {
       margin: 0;
+
+      span {
+        display: none;
+      }
     }
   }
 }
@@ -387,7 +468,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 63px;
+      top: 31px;
       left: 242px;
       width: 58px;
       height: 58px;
@@ -399,7 +480,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 43px;
+      top: 32px;
       left: 590px;
       width: 58px;
       height: 58px;
@@ -408,7 +489,7 @@
   }
 }
 
-.contact__phone {
+.сontact-information--phone {
   @media (min-width: $mobile-width) {
     &::after {
       content: "";
@@ -450,8 +531,8 @@
     &::after {
       content: "";
       position: relative;
-      top: 0;
-      left: -37px;
+      top: -37;
+      left: 366px;
       width: 18px;
       height: 18px;
       background-image: url("../img/icon-phone.svg");
@@ -461,7 +542,7 @@
   }
 }
 
-.contact__mail {
+.сontact-information--mail {
   @media (min-width: $mobile-width) {
     &::after {
       content: "";
@@ -487,29 +568,32 @@
       background-image: url("../img/icon-mail.svg");
       cursor: pointer;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 424px;
-      width: 58px;
-      height: 58px;
-      background-color: $dark-gray;
-    }
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+      padding-left: 40px;
 
-    &::after {
-      content: "";
-      position: relative;
-      top: 0;
-      left: -37px;
-      width: 16px;
-      height: 16px;
-      background-image: url("../img/icon-mail.svg");
-      cursor: pointer;
-      z-index: 1;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 469px;
+        width: 58px;
+        height: 58px;
+        background-color: $dark-gray;
+      }
+
+      &::after {
+        content: "";
+        position: relative;
+        top: -37;
+        left: 451px;
+        width: 16px;
+        height: 16px;
+        background-image: url("../img/icon-mail.svg");
+        cursor: pointer;
+        z-index: 1;
+      }
     }
   }
 }
@@ -533,6 +617,26 @@
   &:active::after {
     background-color: $light-black;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .impression__input[type="radio"]:checked + .impression__label {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 33px;
+      left: 17px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background-color: $light-black;
+    }
+
+    &:active::after {
+      background-color: $light-black;
+      opacity: 0.3;
+    }
   }
 }
 
@@ -563,8 +667,8 @@
       &::before {
         content: "";
         position: absolute;
-        top: 10px;
-        left: 20px;
+        top: 17px;
+        left: 0;
         width: 56px;
         height: 56px;
         border-radius: 50%;
@@ -586,8 +690,8 @@
       &::before {
         content: "";
         position: absolute;
-        top: 10px;
-        left: 20px;
+        top: 16px;
+        left: 0;
         width: 56px;
         height: 56px;
         border-radius: 50%;
@@ -609,7 +713,7 @@
   .impression__list {
     margin: 0;
     padding: 0;
-    padding-top: 12px;
+    padding-top: 6px;
     padding-bottom: 26px;
   }
 
@@ -631,7 +735,13 @@
 @media (min-width: $tablet-width) {
   .impression__list {
     padding: 0;
-    padding-top: 12px;
+    padding-top: 5px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .impression__item {
+    margin-left: 4px;
   }
 }
 
@@ -704,7 +814,7 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 648px;
-    padding-top: 48px;
+    padding-top: 30px;
     padding-bottom: 26px;
   }
 
@@ -713,7 +823,7 @@
     flex-wrap: nowrap;
     width: 960px;
     padding: 0;
-    padding-top: 48px;
+    padding-top: 30px;
     padding-bottom: 26px;
   }
 }
@@ -723,12 +833,16 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    padding: 28px 20px 20px 90px;
+    padding: 33px 20px 20px 100px;
   }
 
   @media (min-width: $tablet-width) {
     position: relative;
     width: 242px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 15px;
   }
 }
 
@@ -800,8 +914,155 @@
   }
 }
 
-.describe-emotions {
-  @media (min-width: $tablet-width) {
-    width: 648px;
+@media (min-width: $mobile-width) {
+  .introduce-yourself .introduce-yourself__label {
+    margin-top: 8px;
+  }
+
+  .special-places .form-feedback__title {
+    margin-top: 10px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .introduce-yourself .form-feedback__title {
+    text-align: left;
+    margin-left: 58px;
+    margin-bottom: 54px;
+    padding-top: 50px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 81px;
+      padding-top: 20px;
+    }
+  }
+
+  .impression .form-feedback__title {
+    text-align: left;
+    margin-bottom: 35px;
+    padding-top: 50px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 81px;
+      padding-top: 20px;
+    }
+  }
+
+  .impression .impression__item {
+    padding-top: 32px;
+    padding-left: 75px;
+  }
+
+  .special-places .form-feedback__title {
+    margin-top: 14px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 9px;
+    }
+  }
+
+  .describe-emotions {
+    width: 648px;
+    margin-top: 34px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.special-places {
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 38px;
+      left: 0;
+      width: 123px;
+      height: 2px;
+      background-color: $base-gray;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 38px;
+      left: 525px;
+      width: 123px;
+      height: 2px;
+      background-color: $base-gray;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 0;
+      width: 280px;
+      height: 2px;
+      background-color: $base-gray;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 32px;
+      left: 680px;
+      width: 280px;
+      height: 2px;
+      background-color: $base-gray;
+    }
+  }
+}
+
+.impression {
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 323px;
+      width: 2px;
+      height: 300px;
+      background-color: $base-gray;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 44px;
+      left: 478px;
+      width: 2px;
+      height: 300px;
+      background-color: $base-gray;
+    }
+  }
+}
+/*
+.contact-information {
+  @media (min-width: $tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 38px;
+      left: 0;
+      width: 123px;
+      height: 2px;
+      background-color: $base-gray;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 38px;
+      left: 525px;
+      width: 123px;
+      height: 2px;
+      background-color: $base-gray;
+    }
+  }
+}*/

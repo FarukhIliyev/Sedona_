@@ -12,22 +12,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 768px;
-    height: 330px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 1200px;
-    height: 330px;
   }
 }
 
 .reason-four__item {
   @media (min-width: $mobile-width) {
     list-style: none;
-    padding-top: 32px;
-    padding-bottom: 30px;
+    padding-top: 26px;
+    padding-bottom: 25px;
     width: 280px;
     margin: 0 auto;
     border-bottom: 1px solid $dark-gray;
@@ -35,42 +33,75 @@
 
   @media (min-width: $tablet-width) {
     width: 256px;
+    padding-top: 44px;
+    padding-bottom: 45px;
     background-color: $base-gray;
   }
 
   @media (min-width: $desktop-width) {
     width: 400px;
     background-color: $base-gray;
+    padding-bottom: 64px;
   }
 }
 
 .reason-four__title {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0;
-  color: $base-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    color: $base-black;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .reason-four__number {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: $light-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: $light-black;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 23px;
+  }
 }
 
 .reason-four__description {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-  color: $light-black;
-  text-transform: uppercase;
+  @media (min-width: $mobile-width) {
+    display: inline-block;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    margin: 0;
+    margin-top: 17px;
+    color: $light-black;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 55px;
+    padding-right: 55px;
+    margin: 0;
+  }
 }

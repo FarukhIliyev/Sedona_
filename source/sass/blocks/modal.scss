@@ -1,25 +1,27 @@
 .modal-connect,
 .modal-disconnect {
   @media (min-width: $mobile-width) {
-    display: block;
+    display: none;
   }
 
   @media (min-width: $tablet-width) {
-    display: block;
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .modal-connect {
     position: absolute;
-    top: 47%;
-    left: 29%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 640px;
     height: 347px;
     text-align: center;
     padding-top: 48px;
     box-shadow: 0 0 10px 5px $dark-gray;
     background-color: $base-white;
+    z-index: 1;
   }
 
   .modal-connect__title {
@@ -54,9 +56,18 @@
     line-height: 26px;
     text-transform: uppercase;
     border: none;
+    outline: none;
     background-color: $base-blue;
     color: $base-white;
-    z-index: 5;
+    z-index: 1;
+
+    &:hover {
+      background-color: $special-dark-blue;
+    }
+
+    &:active {
+      background-color: $special-navy-blue;
+    }
   }
 
   .modal-connect__button-wrapper {
@@ -69,8 +80,9 @@
 
   .modal-disconnect {
     position: absolute;
-    top: 62%;
-    left: 37%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 400px;
     height: 347px;
     padding-top: 40px;
@@ -79,6 +91,7 @@
     text-align: center;
     box-shadow: 0 0 10px $dark-gray;
     background-color: $base-white;
+    z-index: 1;
   }
 
   .modal-disconnect__title {
@@ -113,7 +126,16 @@
     line-height: 26px;
     text-transform: uppercase;
     border: none;
+    outline: none;
     background-color: $base-blue;
     color: $base-white;
+
+    &:hover {
+      background-color: $special-dark-blue;
+    }
+
+    &:active {
+      background-color: $special-navy-blue;
+    }
   }
 }
