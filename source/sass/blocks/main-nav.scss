@@ -36,6 +36,8 @@
 .site-list__item {
   @media (min-width: $mobile-width) {
     list-style: none;
+    height: 55px;
+    padding-top: 5px;
     border-top: 1px solid $base-light-blue;
     border-bottom: 1px solid $base-dark-blue;
 
@@ -51,7 +53,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     width: 25%;
-    padding-top: 19px;
+    padding-top: 16px;
     padding-bottom: 17px;
 
     &:hover {
@@ -148,7 +150,7 @@
   .main-nav__toggle {
     content: "";
     position: absolute;
-    top: 208px;
+    top: 222px;
     right: 0;
     width: 63px;
     height: 52px;
