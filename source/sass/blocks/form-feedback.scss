@@ -558,7 +558,7 @@
   }
 
   @media (min-width: $tablet-width) {
-      &::after {
+    &::after {
       content: "";
       position: relative;
       top: -38px;
@@ -568,32 +568,32 @@
       background-image: url("../img/icon-mail.svg");
       cursor: pointer;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    margin-left: 20px;
-    padding-left: 40px;
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+      padding-left: 40px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 469px;
-      width: 58px;
-      height: 58px;
-      background-color: $dark-gray;
-    }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 469px;
+        width: 58px;
+        height: 58px;
+        background-color: $dark-gray;
+      }
 
-    &::after {
-      content: "";
-      position: relative;
-      top: -37;
-      left: 451px;
-      width: 16px;
-      height: 16px;
-      background-image: url("../img/icon-mail.svg");
-      cursor: pointer;
-      z-index: 1;
+      &::after {
+        content: "";
+        position: relative;
+        top: -37;
+        left: 451px;
+        width: 16px;
+        height: 16px;
+        background-image: url("../img/icon-mail.svg");
+        cursor: pointer;
+        z-index: 1;
+      }
     }
   }
 }
@@ -691,7 +691,7 @@
         content: "";
         position: absolute;
         top: 16px;
-        left: 0px;
+        left: 0;
         width: 56px;
         height: 56px;
         border-radius: 50%;
