@@ -73,6 +73,40 @@
     &:nth-child(4) {
       text-align: right;
     }
+
+    &:nth-child(1) {
+      margin-left: 49px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 145px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 15px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 28px;
+    }
+
+    @media (min-width: $desktop-width) {
+      &:nth-child(1) {
+        margin-left: 90px;
+      }
+
+      &:nth-child(2) {
+        margin-right: 145px;
+      }
+
+      &:nth-child(3) {
+        margin-right: 20px;
+      }
+
+      &:nth-child(4) {
+        margin-right: 72px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
