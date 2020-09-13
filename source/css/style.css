@@ -608,8 +608,11 @@ template {
     grid-column-end: -1;
     width: 648px;
     height: 480px;
-    background-image: url("../img/photo-sunset-desktop@1x.jpg");
+    background-image: url("../img/photo-sunset-tablet@1x.jpg");
     background-repeat: no-repeat; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+    .catalog__item--vast {
+      background-image: url("../img/photo-sunset-tablet@2x.jpg"); } }
 
 @media (min-width: 1200px) {
   .catalog__item--vast {
@@ -617,6 +620,9 @@ template {
     height: 400px;
     background-image: url("../img/photo-sunset-desktop@1x.jpg");
     background-repeat: no-repeat; } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+    .catalog__item--vast {
+      background-image: url("../img/photo-sunset-desktop@2x.jpg"); } }
 
 @media (min-width: 768px) {
   .catalog__item--vegetation {
@@ -626,6 +632,9 @@ template {
     height: 347px;
     background-image: url("../img/photo-cactus-tablet@1x.jpg");
     background-repeat: no-repeat; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+    .catalog__item--vegetation {
+      background-image: url("../img/photo-cactus-tablet@2x.jpg"); } }
 
 @media (min-width: 1200px) {
   .catalog__item--vegetation {
@@ -635,6 +644,9 @@ template {
     height: 267px;
     background-image: url("../img/photo-cactus-desktop@1x.jpg");
     background-repeat: no-repeat; } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+    .catalog__item--vegetation {
+      background-image: url("../img/photo-cactus-desktop@2x.jpg"); } }
 
 @media (min-width: 768px) {
   .catalog__item--north {
@@ -643,7 +655,12 @@ template {
     width: 324px;
     height: 347px;
     background-image: url("../img/photo-roads-tablet@1x.jpg");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+    .catalog__item--north {
+      background-image: url("../img/photo-roads-tablet@2x.jpg"); } }
+
+@media (min-width: 768px) {
     .catalog__item--north .catalog__info-wrapper--north {
       background-color: #eaeaea; } }
 
@@ -654,7 +671,12 @@ template {
     width: 400px;
     height: 267px;
     background-image: url("../img/photo-roads-desktop@1x.jpg");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat; } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+    .catalog__item--north {
+      background-image: url("../img/photo-roads-desktop@2x.jpg"); } }
+
+@media (min-width: 1200px) {
     .catalog__item--north .catalog__info-wrapper--north {
       background-color: rgba(0, 0, 0, 0.25); } }
 
@@ -666,6 +688,9 @@ template {
     height: 347px;
     background-image: url("../img/photo-bridge-tablet@1x.jpg");
     background-repeat: no-repeat; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+    .catalog__item--bridge {
+      background-image: url("../img/photo-bridge-tablet@2x.jpg"); } }
 
 @media (min-width: 1200px) {
   .catalog__item--bridge {
@@ -675,6 +700,9 @@ template {
     height: 267px;
     background-image: url("../img/photo-bridge-desktop@1x.jpg");
     background-repeat: no-repeat; } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+    .catalog__item--bridge {
+      background-image: url("../img/photo-bridge-desktop@2x.jpg"); } }
 
 @media (min-width: 320px) {
   .catalog__like {
@@ -809,6 +837,58 @@ template {
     .features__image-wrapper .image-wrapper {
       width: 800px;
       height: 256px; } }
+
+@media (min-width: 320px) {
+  .features__image-wrapper--city {
+    width: 320px;
+    height: 256px;
+    background-image: url("../img/main-city-mobile@1x.jpg");
+    background-repeat: no-repeat; } }
+  @media (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (min-resolution: 2dppx) {
+    .features__image-wrapper--city {
+      width: 320px;
+      height: 256px;
+      background-image: url("../img/main-city-mobile@2x.jpg");
+      background-repeat: no-repeat; } }
+
+@media (min-width: 768px) {
+  .features__image-wrapper--city {
+    width: 512px;
+    height: 256px;
+    background-image: url("../img/main-city-tablet@1x.jpg");
+    background-repeat: no-repeat; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+    .features__image-wrapper--city {
+      width: 512px;
+      height: 256px;
+      background-image: url("../img/main-city-tablet@2x.jpg");
+      background-repeat: no-repeat; } }
+
+@media (min-width: 1200px) {
+  .features__image-wrapper--city {
+    width: 800px;
+    height: 256px;
+    background-image: url("../img/main-city-desktop@1x.jpg");
+    background-repeat: no-repeat; } }
+  @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+    .features__image-wrapper--city {
+      width: 800px;
+      height: 256px;
+      background-image: url("../img/main-city-desktop@2x.jpg");
+      background-repeat: no-repeat; } }
+
+@media (min-width: 768px) {
+  .features__image-wrapper--bridge {
+    width: 800px;
+    height: 256px;
+    background-image: url("../img/main-bridge-desktop@1x.jpg");
+    background-repeat: no-repeat; } }
+  @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+    .features__image-wrapper--bridge {
+      width: 800px;
+      height: 256px;
+      background-image: url("../img/main-bridge-desktop@2x.jpg");
+      background-repeat: no-repeat; } }
 
 @media (min-width: 320px) {
   .find {
@@ -2113,13 +2193,15 @@ template {
     .main-reason__description br {
       display: block; } }
 
-@media (min-width: 768px) {
-  .map__image {
-    display: none; } }
+.map__image {
+  display: none; }
 
-@media (min-width: 1200px) {
-  .map__image {
-    display: none; } }
+@media (min-width: 320px) {
+  .map__wrapper {
+    width: 320px;
+    height: 350px;
+    background-image: url("../img/bg-map-mobile@1x.jpg");
+    background-repeat: no-repeat; } }
 
 @media (min-width: 768px) {
   .map__wrapper {
