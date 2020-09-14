@@ -143,9 +143,7 @@ const build = gulp.series(
   html
 );
 
-exports.build = gulp.series(
-  styles, server, watcher
-);
+exports.build = build;
 
 // start
 
