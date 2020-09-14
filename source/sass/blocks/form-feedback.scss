@@ -191,28 +191,38 @@
   margin-top: 11px;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
-    font-size: 21px;
-  }
-
   &::before {
     content: "";
     position: absolute;
-    top: 22px;
+    top: -10px;
     left: 0;
-    width: 123px;
+    width: 320px;
     height: 2px;
     background-color: $base-gray;
   }
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 22px;
-    left: 525px;
-    width: 123px;
-    height: 2px;
-    background-color: $base-gray;
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 0;
+      width: 123px;
+      height: 2px;
+      background-color: $base-gray;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 525px;
+      width: 123px;
+      height: 2px;
+      background-color: $base-gray;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -972,6 +982,16 @@
 }
 
 .special-places {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 320px;
+    height: 2px;
+    background-color: $base-gray;
+  }
+
   @media (min-width: $tablet-width) {
     &::before {
       content: "";
@@ -1018,6 +1038,16 @@
 }
 
 .impression {
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 320px;
+    height: 2px;
+    background-color: $base-gray;
+  }
+
   @media (min-width: $tablet-width) {
     &::before {
       content: "";
